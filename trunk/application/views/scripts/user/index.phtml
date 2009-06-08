@@ -1,0 +1,63 @@
+
+<p>
+<a href="<?php echo $this->url(
+    array(
+        'controller' => 'user',
+        'action'     => 'create'
+    ), 'default', true ) ?>">Add Entry</a></p>
+
+Users: <br />
+
+<p><?php echo $this->searchForm; ?></p>
+
+<?php if (count($this->paginator)): ?>
+<table>
+	<tr>
+		<th>id</th>
+		<th>username</th>
+		<th>email</th>
+		<th>created</th>
+	</tr>
+    <?php 
+    $usernames = array();
+    $emails = array();
+    $ids = array();
+    foreach ($this->paginator as $entry): 
+    ?>
+
+
+    <?php 
+    $usernames[] = $this->escape( $entry->username );
+    $emails[]= $this->escape( $entry->email ) ;
+    $ids[] = $this->escape( $entry->id );
+    ?>
+    <tr>
+    	<td><?php echo $this->escape( $entry->id ) ?></td>
+    	<td><?php echo $this->escape( $entry->username ) ?></td>
+    	<td><?php echo $this->escape( $entry->email ) ?></td>
+    	<td><?php echo $this->escape( $entry->created ) ?></td>
+	    <td>
+		<a href="<?php echo $this->url(
+		    array(
+		        'controller' => 'user',
+		        'action'     => 'update'
+		    ), 'default', true ) ?>/id/<?php echo $this->escape( $entry->id );?>">update</a>
+	    </td>
+	    <td>
+			<a href="<?php echo $this->url(
+		    array(
+		        'controller' => 'user',
+		        'action'     => 'delete'
+		    ), 'default', true ) ?>/id/<?php echo $this->escape( $entry->id );?>">delete</a>
+		</td>		
+	</tr>	    
+    
+    <?php endforeach ?>
+</table>
+<br />
+<?php echo $this->paginationControl($this->paginator ); ?>
+<br />
+<?php else: ?>
+<strong>Is empty</strong>
+<?php endif;?>
+

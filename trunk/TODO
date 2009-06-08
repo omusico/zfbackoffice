@@ -1,0 +1,35 @@
+Este toolkit tiene que tener las siguientes caracteristicas
+
+General
+
+- Crear un layout generico
+
+Crear modulos con 
+
+*- paginado
+- abm ejemplo
+- buscador
+*- manejador de mensajes
+- Manejador de mensajes de alerta para confirmacion
+
+
+Seguridad
+
+* Abml de usuarios
+- Abml de permisos
+- Abml de menu
+- Asociar Menu con permisos y usuarios
+- Autenticar usuarios por cookie, e integrar con SSO. Chequear si se puede integrar con Zend_Acl	 
+- Definir Roles
+
+Modulos 
+
+- Administrador de usuarios (datos basicos)
+- Administrador de roles 
+- Administrador de recursos
+- Administrador de Asignacion de permisos
+- Historial de login
+- Historial de accesos fallidos al login
+- Creador de menu. 
+- Administrador de themes
+- Administrador de Modulos.
