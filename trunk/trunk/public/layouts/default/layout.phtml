@@ -1,0 +1,44 @@
+<?php echo $this->doctype(); ?>
+<html>
+<head>
+    <title>Ext 2.0 Layout Examples</title>
+    <link rel="stylesheet" type="text/css" href="http://core.dev/js/extjs/resources/css/ext-all.css">
+    <script type="text/javascript" src="http://core.dev/js/extjs/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="http://core.dev/js/extjs/ext-all.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="http://core.dev/js/extjs/examples/layout-browser/layout-browser.css">
+
+    <script type="text/javascript" src="http://core.dev/js/extjs/examples/layout-browser/layouts/basic.js"></script>
+    <script type="text/javascript" src="http://core.dev/js/extjs/examples/layout-browser/layouts/custom.js"></script>
+    <script type="text/javascript" src="http://core.dev/js/extjs/examples/layout-browser/layouts/combination.js"></script>
+    <script type="text/javascript" src="http://core.dev/js/extjs/examples/layout-browser/layout-browser.js"></script>
+
+	<script type="text/javascript" src="http://core.dev/js/extjs/examples/form/states.js"></script>
+	<script type="text/javascript" src="http://core.dev/js/extjs/examples/menu/menus.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://core.dev/js/extjs/examples/menu/menus.css" />
+
+</head>
+<body>
+	<div id="header"><h1>Backend de southwebfactory.com</h1></div>
+
+    	<div style="display:none;">
+    
+        <!-- Start page content -->
+        <div id="start-div">
+        	<div style="float:left;" ><img src="images/layout-icon.gif" /></div>
+            	<div style="margin-left:100px;">
+			<div id="messages"><?php echo $this->swfFlashMessenger()?></div>
+			<?php echo $this->layout()->content ?>
+		</div>
+        </div>
+        
+        <!-- Basic layouts -->
+        <div id="absolute-details">
+		<h2>Ext.layout.AbsoluteLayout</h2>
+            	<p>This is a simple layout style that allows you to position items within a container using 
+            	CSS-style absolute positioning via XY coordinates.</p>
+	</div>
+   </div>
+</body>
+</html>
+

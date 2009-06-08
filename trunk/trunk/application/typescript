@@ -1,0 +1,704 @@
+Script started on Fri 22 May 2009 03:03:58 PM EDT
+]0;root@host:/var/www/southwebfactory.com/core/application[root@host application]# ls
+[00m[00mBootstrap.php[00m  [00;34mconfigs[00m  [00;34mcontrollers[00m  [00;34mmodels[00m  [00;34mscripts[00m  [00mtypescript[00m  [00;34mviews[00m
+[m]0;root@host:/var/www/southwebfactory.com/core/application[root@host application]# cd scripts/
+data.sqlite.sql    load.sqlite.php    schema.sqlite.sql  
+[root@host application]# cd scripts/[K[1P[1P scripts[1Pscripts[C[C[C[C[C[C[C/loa[K[K[Kcscripts/dscripts/ scripts/[C[C[C[C[C[C[C[C
+data.sqlite.sql    load.sqlite.php    schema.sqlite.sql  
+[root@host application]# cd scripts/
+data.sqlite.sql    load.sqlite.php    schema.sqlite.sql  
+[root@host application]# cd scripts/ki[K[Kload.sqlite.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1@p[1@h[1@p[1@ 
+PHP Warning:  require_once(../../library/Zend/Application.php): failed to open stream: No such file or directory in /var/www/southwebfactory.com/core/application/scripts/load.sqlite.php on line 16
+
+Warning: require_once(../../library/Zend/Application.php): failed to open stream: No such file or directory in /var/www/southwebfactory.com/core/application/scripts/load.sqlite.php on line 16
+PHP Fatal error:  require_once(): Failed opening required '../../library/Zend/Application.php' (include_path='.:/usr/local/httpd/php/lib/php') in /var/www/southwebfactory.com/core/application/scripts/load.sqlite.php on line 16
+
+Fatal error: require_once(): Failed opening required '../../library/Zend/Application.php' (include_path='.:/usr/local/httpd/php/lib/php') in /var/www/southwebfactory.com/core/application/scripts/load.sqlite.php on line 16
+]0;root@host:/var/www/southwebfactory.com/core/application[root@host application]# php scripts/load.sqlite.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kls
+[00m[00mBootstrap.php[00m  [00;34mconfigs[00m  [00;34mcontrollers[00m  [00;34mmodels[00m  [00;34mscripts[00m  [00mtypescript[00m  [00;34mviews[00m
+[m]0;root@host:/var/www/southwebfactory.com/core/application[root@host application]# mv ../[K[K[Kscripts/ ../data/
+]0;root@host:/var/www/southwebfactory.com/core/application[root@host application]# cd ../
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# ls
+[00m[00;34mapplication[00m  [00;34mdata[00m  [00;34mlibrary[00m  [00;34mpublic[00m  [00;34mtests[00m
+[m]0;root@host:/var/www/southwebfactory.com/core[root@host core]# date [K/s[K[K[Ka/scripts/lopdata/scripts/lohdata/scripts/lopdata/scripts/lo data/scripts/lo[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cad.sqlite.php 
+PHP Warning:  require_once(../../library/Zend/Application.php): failed to open stream: No such file or directory in /var/www/southwebfactory.com/core/data/scripts/load.sqlite.php on line 16
+
+Warning: require_once(../../library/Zend/Application.php): failed to open stream: No such file or directory in /var/www/southwebfactory.com/core/data/scripts/load.sqlite.php on line 16
+PHP Fatal error:  require_once(): Failed opening required '../../library/Zend/Application.php' (include_path='.:/usr/local/httpd/php/lib/php') in /var/www/southwebfactory.com/core/data/scripts/load.sqlite.php on line 16
+
+Fatal error: require_once(): Failed opening required '../../library/Zend/Application.php' (include_path='.:/usr/local/httpd/php/lib/php') in /var/www/southwebfactory.com/core/data/scripts/load.sqlite.php on line 16
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# cd /.[K[K//
+]0;root@host://[root@host //]# cd /ar[K[Kvar/www/southwebfactory.com/
+]0;root@host:/var/www/southwebfactory.com[root@host southwebfactory.com]# wget http://framework.zend.com/demos/ZendFrameworkQuickstart-20090430.tar.gz
+--15:06:43--  http://framework.zend.com/demos/ZendFrameworkQuickstart-20090430.tar.gz
+Resolving framework.zend.com... 64.255.169.102
+Connecting to framework.zend.com|64.255.169.102|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12278 (12K) [application/x-gzip]
+Saving to: `ZendFrameworkQuickstart-20090430.tar.gz'
+
+ 0% [                                                                                                            ] 0           --.-K/s             100%[===========================================================================================================>] 12,278      --.-K/s   in 0.02s  
+
+15:06:43 (629 KB/s) - `ZendFrameworkQuickstart-20090430.tar.gz' saved [12278/12278]
+
+]0;root@host:/var/www/southwebfactory.com[root@host southwebfactory.com]# ls
+[00m[00;32mcoming_soon.jpg[00m  [00;34mcore[00m  [00;36mdev[00m  [00;34mgonzalo[00m  [00;32mindex.php[00m  [00minfo.php[00m  [00;34mlmc[00m  [00;31mZendFrameworkQuickstart-20090430.tar.gz[00m
+[m]0;root@host:/var/www/southwebfactory.com[root@host southwebfactory.com]# tar zxfv ZendFrameworkQuickstart-20090430.tar.gz 
+ZendFrameworkQuickstart-20090430/
+ZendFrameworkQuickstart-20090430/application/
+ZendFrameworkQuickstart-20090430/application/controllers/
+ZendFrameworkQuickstart-20090430/application/controllers/GuestbookController.php
+ZendFrameworkQuickstart-20090430/application/controllers/IndexController.php
+ZendFrameworkQuickstart-20090430/application/controllers/ErrorController.php
+ZendFrameworkQuickstart-20090430/application/views/
+ZendFrameworkQuickstart-20090430/application/views/scripts/
+ZendFrameworkQuickstart-20090430/application/views/scripts/error/
+ZendFrameworkQuickstart-20090430/application/views/scripts/error/error.phtml
+ZendFrameworkQuickstart-20090430/application/views/scripts/guestbook/
+ZendFrameworkQuickstart-20090430/application/views/scripts/guestbook/index.phtml
+ZendFrameworkQuickstart-20090430/application/views/scripts/guestbook/sign.phtml
+ZendFrameworkQuickstart-20090430/application/views/scripts/index/
+ZendFrameworkQuickstart-20090430/application/views/scripts/index/index.phtml
+ZendFrameworkQuickstart-20090430/application/views/helpers/
+ZendFrameworkQuickstart-20090430/application/Bootstrap.php
+ZendFrameworkQuickstart-20090430/application/layouts/
+ZendFrameworkQuickstart-20090430/application/layouts/scripts/
+ZendFrameworkQuickstart-20090430/application/layouts/scripts/layout.phtml
+ZendFrameworkQuickstart-20090430/application/forms/
+ZendFrameworkQuickstart-20090430/application/forms/Guestbook.php
+ZendFrameworkQuickstart-20090430/application/models/
+ZendFrameworkQuickstart-20090430/application/models/Guestbook.php
+ZendFrameworkQuickstart-20090430/application/models/GuestbookMapper.php
+ZendFrameworkQuickstart-20090430/application/models/DbTable/
+ZendFrameworkQuickstart-20090430/application/models/DbTable/Guestbook.php
+ZendFrameworkQuickstart-20090430/application/configs/
+ZendFrameworkQuickstart-20090430/application/configs/application.ini
+ZendFrameworkQuickstart-20090430/scripts/
+ZendFrameworkQuickstart-20090430/scripts/schema.sqlite.sql
+ZendFrameworkQuickstart-20090430/scripts/load.sqlite.php
+ZendFrameworkQuickstart-20090430/scripts/data.sqlite.sql
+ZendFrameworkQuickstart-20090430/public/
+ZendFrameworkQuickstart-20090430/public/index.php
+ZendFrameworkQuickstart-20090430/public/css/
+ZendFrameworkQuickstart-20090430/public/css/global.css
+ZendFrameworkQuickstart-20090430/public/.htaccess
+ZendFrameworkQuickstart-20090430/README.txt
+ZendFrameworkQuickstart-20090430/library/
+ZendFrameworkQuickstart-20090430/library/Zend
+ZendFrameworkQuickstart-20090430/tests/
+ZendFrameworkQuickstart-20090430/tests/application/
+ZendFrameworkQuickstart-20090430/tests/application/controllers/
+ZendFrameworkQuickstart-20090430/tests/application/controllers/GuestbookControllerTest.php
+ZendFrameworkQuickstart-20090430/tests/application/models/
+ZendFrameworkQuickstart-20090430/tests/application/models/GuestbookTest.php
+ZendFrameworkQuickstart-20090430/tests/log/
+ZendFrameworkQuickstart-20090430/tests/log/report/
+ZendFrameworkQuickstart-20090430/tests/library/
+ZendFrameworkQuickstart-20090430/tests/library/bootstrap.php
+ZendFrameworkQuickstart-20090430/tests/phpunit-bootstrap.php
+ZendFrameworkQuickstart-20090430/tests/phpunit.xml
+ZendFrameworkQuickstart-20090430/data/
+ZendFrameworkQuickstart-20090430/data/db/
+ZendFrameworkQuickstart-20090430/data/db/guestbook-dev.db
+ZendFrameworkQuickstart-20090430/data/db/guestbook-testing.db
+ZendFrameworkQuickstart-20090430/.zfproject.xml
+]0;root@host:/var/www/southwebfactory.com[root@host southwebfactory.com]# ls
+[00m[00;32mcoming_soon.jpg[00m  [00;34mcore[00m  [00;36mdev[00m  [00;34mgonzalo[00m  [00;32mindex.php[00m  [00minfo.php[00m  [00;34mlmc[00m  [00;34mZendFrameworkQuickstart-20090430[00m  [00;31mZendFrameworkQuickstart-20090430.tar.gz[00m
+[m]0;root@host:/var/www/southwebfactory.com[root@host southwebfactory.com]# ls
+[00m[00;32mcoming_soon.jpg[00m  [00;34mcore[00m  [00;36mdev[00m  [00;34mgonzalo[00m  [00;32mindex.php[00m  [00minfo.php[00m  [00;34mlmc[00m  [00;34mZendFrameworkQuickstart-20090430[00m  [00;31mZendFrameworkQuickstart-20090430.tar.gz[00m
+[m]0;root@host:/var/www/southwebfactory.com[root@host southwebfactory.com]# l;s[K[Ks
+[00m[00;32mcoming_soon.jpg[00m  [00;34mcore[00m  [00;36mdev[00m  [00;34mgonzalo[00m  [00;32mindex.php[00m  [00minfo.php[00m  [00;34mlmc[00m  [00;34mZendFrameworkQuickstart-20090430[00m  [00;31mZendFrameworkQuickstart-20090430.tar.gz[00m
+[m]0;root@host:/var/www/southwebfactory.com[root@host southwebfactory.com]# cd ZendFrameworkQuickstart-20090430
+]0;root@host:/var/www/southwebfactory.com/ZendFrameworkQuickstart-20090430[root@host ZendFrameworkQuickstart-20090430]# ls
+[00m[00;34mapplication[00m  [00;34mdata[00m  [00;34mlibrary[00m  [00;34mpublic[00m  [00mREADME.txt[00m  [00;34mscripts[00m  [00;34mtests[00m
+[m]0;root@host:/var/www/southwebfactory.com/ZendFrameworkQuickstart-20090430[root@host ZendFrameworkQuickstart-20090430]# cd data/db/guestbook-[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd application/
+Bootstrap.php  configs/       controllers/   forms/         layouts/       models/        views/         
+[root@host ZendFrameworkQuickstart-20090430]# cd application/s[K
+Bootstrap.php  configs/       controllers/   forms/         layouts/       models/        views/         
+[root@host ZendFrameworkQuickstart-20090430]# cd application/
+Bootstrap.php  configs/       controllers/   forms/         layouts/       models/        views/         
+[root@host ZendFrameworkQuickstart-20090430]# cd application/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ../
+]0;root@host:/var/www/southwebfactory.com[root@host southwebfactory.com]# ls
+[00m[00;32mcoming_soon.jpg[00m  [00;34mcore[00m  [00;36mdev[00m  [00;34mgonzalo[00m  [00;32mindex.php[00m  [00minfo.php[00m  [00;34mlmc[00m  [00;34mZendFrameworkQuickstart-20090430[00m  [00;31mZendFrameworkQuickstart-20090430.tar.gz[00m
+[m]0;root@host:/var/www/southwebfactory.com[root@host southwebfactory.com]# cd [K ZendFrameworkQuickstart-20090430
+]0;root@host:/var/www/southwebfactory.com/ZendFrameworkQuickstart-20090430[root@host ZendFrameworkQuickstart-20090430]# ls
+[00m[00;34mapplication[00m  [00;34mdata[00m  [00;34mlibrary[00m  [00;34mpublic[00m  [00mREADME.txt[00m  [00;34mscripts[00m  [00;34mtests[00m
+[m]0;root@host:/var/www/southwebfactory.com/ZendFrameworkQuickstart-20090430[root@host ZendFrameworkQuickstart-20090430]# tree
+bash: tree: command not found
+]0;root@host:/var/www/southwebfactory.com/ZendFrameworkQuickstart-20090430[root@host ZendFrameworkQuickstart-20090430]# tr
+tr           tracd        tracepath6   traceroute6  trap         troff        try-from     
+trac-admin   tracepath    traceroute   tracert      traptoemail  true         
+[root@host ZendFrameworkQuickstart-20090430]# tr
+tr           tracd        tracepath6   traceroute6  trap         troff        try-from     
+trac-admin   tracepath    traceroute   tracert      traptoemail  true         
+[root@host ZendFrameworkQuickstart-20090430]# tre[K[K[Kdir
+dir        dircolors  dirname    dirs       
+[root@host ZendFrameworkQuickstart-20090430]# dir
+dir        dircolors  dirname    dirs       
+[root@host ZendFrameworkQuickstart-20090430]# dir
+dir        dircolors  dirname    dirs       
+[root@host ZendFrameworkQuickstart-20090430]# dir
+dir        dircolors  dirname    dirs       
+[root@host ZendFrameworkQuickstart-20090430]# dir[K[K[Kls
+[00m[00;34mapplication[00m  [00;34mdata[00m  [00;34mlibrary[00m  [00;34mpublic[00m  [00mREADME.txt[00m  [00;34mscripts[00m  [00;34mtests[00m
+[m]0;root@host:/var/www/southwebfactory.com/ZendFrameworkQuickstart-20090430[root@host ZendFrameworkQuickstart-20090430]# cd ../
+]0;root@host:/var/www/southwebfactory.com[root@host southwebfactory.com]# ls
+[00m[00;32mcoming_soon.jpg[00m  [00;34mcore[00m  [00;36mdev[00m  [00;34mgonzalo[00m  [00;32mindex.php[00m  [00minfo.php[00m  [00;34mlmc[00m  [00;34mZendFrameworkQuickstart-20090430[00m  [00;31mZendFrameworkQuickstart-20090430.tar.gz[00m
+[m]0;root@host:/var/www/southwebfactory.com[root@host southwebfactory.com]# cd co
+bash: cd: co: No such file or directory
+]0;root@host:/var/www/southwebfactory.com[root@host southwebfactory.com]# cd core/
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# ls
+[00m[00;34mapplication[00m  [00;34mdata[00m  [00;34mlibrary[00m  [00;34mpublic[00m  [00;34mtests[00m
+[m]0;root@host:/var/www/southwebfactory.com/core[root@host core]# mv data/scripts/ .
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# ls
+[00m[00;34mapplication[00m  [00;34mdata[00m  [00;34mlibrary[00m  [00;34mpublic[00m  [00;34mscripts[00m  [00;34mtests[00m
+[m]0;root@host:/var/www/southwebfactory.com/core[root@host core]# php scripts/load.sqlite.php 
+PHP Warning:  require_once(../../library/Zend/Application.php): failed to open stream: No such file or directory in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 16
+
+Warning: require_once(../../library/Zend/Application.php): failed to open stream: No such file or directory in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 16
+PHP Fatal error:  require_once(): Failed opening required '../../library/Zend/Application.php' (include_path='.:/usr/local/httpd/php/lib/php') in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 16
+
+Fatal error: require_once(): Failed opening required '../../library/Zend/Application.php' (include_path='.:/usr/local/httpd/php/lib/php') in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 16
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# vim scripts/load.sqlite.php 
+[?1049h[?1h=[1;48r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[48;1H"scripts/load.sqlite.php" "scripts/load.sqlite.php" 72L, 2240C[>c[1;1H[35m<?[m[30m[43mphp[m
+[34m// If any parameter is passed after the script name (like 1 or --withdata)
+// load the data file after the schema has loaded.[m
+[33m$[m[36mwithData[m [33m=[m [31mfalse[m;
+[33mif[m [35m([m[33misset[m[35m([m[33m$[m[36m_SERVER[m[35m[[m'[31margv[m'[35m][[m[31m1[m[35m]))[m [35m{[m
+    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;
+[35m}[m [33melseif[m [35m([m[36mdefined[m[35m([m'[31mAPPLICATION_LOAD_TESTDATA[m'[35m))[m [35m{[m
+    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;
+[35m}[m
+
+[34m// Initialize the application and bootstrap the database adapter[m
+[36mdefined[m[35m([m'[31mAPPLICATION_PATH[m'[35m)[m
+    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_PATH[m', [36mrealpath[m[35m([m[36mdirname[m[35m([m[31m__FILE__[m[35m)[m [33m.[m '[31m/../application[m'[35m))[m;
+[36mdefined[m[35m([m'[31mAPPLICATION_ENV[m'[35m)[m
+    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_ENV[m', '[31mdevelopment[m'[35m)[m;
+[35mrequire_once[m '[31m../../library/Zend/Application.[m[30m[43mphp[m';
+[33m$[m[36mapplication[m [33m=[m [35mnew[m Zend_Application[35m([m
+    APPLICATION_ENV,
+    APPLICATION_PATH [33m.[m '[31m/configs/application.ini[m'
+[35m)[m;
+[33m$[m[36mbootstrap[m [33m=[m [33m$[m[36mapplication[m[32m->[mgetBootstrap[35m()[m;
+[33m$[m[36mbootstrap[m[32m->[mbootstrap[35m([m'[31mdb[m'[35m)[m;
+[33m$[m[36mdbAdapter[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetResource[35m([m'[31mdb[m'[35m)[m;
+
+[34m// let the user know whats going on (we are actually creating a 
+// database here)[m
+[33mif[m [35m([m'[31mtesting[m' [33m!=[m APPLICATION_ENV[35m)[m [35m{
+[m    [35mecho[m '[31mWriting Database Guestbook in (control-c to cancel): [m' [33m.[m PHP_EOL;
+    [33mfor[m [35m([m[33m$[m[36mx[m [33m=[m [31m5[m; [33m$[m[36mx[m [33m>[m [31m0[m; [33m$[m[36mx[m[33m--[m[35m)[m [35m{[30;9Hecho[m [33m$[m[36mx[m [33m.[m "[35m\r[m"; [36msleep[m[35m([m[31m1[m[35m)[m;
+    [35m}
+}[m
+
+[34m// Check to see if we have a database file already[m
+[33m$[m[36moptions[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetOption[35m([m'[31mresources[m'[35m)[m;
+[33m$[m[36mdbFile[m  [33m=[m [33m$[m[36moptions[m[35m[[m'[31mdb[m'[35m][[m'[31mparams[m'[35m][[m'[31mdbname[m'[35m][m;
+[33mif[m [35m([m[36mfile_exists[m[35m([m[33m$[m[36mdbFile[m[35m))[m [35m{[m
+    [36munlink[m[35m([m[33m$[m[36mdbFile[m[35m)[m;
+[35m}[m
+
+[34m// this block executes the actual statements that were loaded from 
+// the schema file.[m
+[33mtry[m [35m{[m
+    [33m$[m[36mschemaSql[m [33m=[m [36mfile_get_contents[m[35m([m[36mdirname[m[35m([m[31m__FILE__[m[35m)[m [33m.[m '[31m/schema.sqlite.sql[m'[35m)[m;
+    [34m// use the connection directly to load sql in batches[m
+    [33m$[m[36mdbAdapter[m[32m->[mgetConnection[35m()[m[32m->[mexec[35m([m[33m$[m[36mschemaSql[m[35m)[m;[48;131H11,1          Top[11;1H[?12l[?25h[?25l[48;131H12,1          Top[12;1H[?12l[?25h[?25l[48;131H13,1          Top[13;1H[?12l[?25h[?25l[48;131H14,1          Top[14;1H[?12l[?25h[?25l[48;131H15,1          Top[15;1H[?12l[?25h[?25l[48;131H16,1          Top[16;1H[?12l[?25h[?25l[48;131H17,1          Top[17;1H[?12l[?25h[?25l[48;131H18,1          Top[18;1H[?12l[?25h[?25l[48;131H19,1          Top[19;1H[?12l[?25h[?25l[17;36H[35m[46m(
+
+
+)[m[48;131H20,1          Top[20;1H[?12l[?25h[?25l[17;36H[35m(
+
+
+)[m[48;131H21,1          Top[21;1H[?12l[?25h[?25l[48;131H22,1          Top[22;1H[?12l[?25h[?25l[48;131H21,1          Top[21;1H[?12l[?25h[?25l[17;36H[35m[46m(
+
+
+)[m[48;131H20,1          Top[20;1H[?12l[?25h[?25l[17;36H[35m(
+
+
+)[m[48;131H19,1          Top[19;1H[?12l[?25h[?25l[48;131H18,1          Top[18;1H[?12l[?25h[?25l[48;131H17,1          Top[17;1H[?12l[?25h[?25l[48;131H16,1          Top[16;1H[?12l[?25h[?25l[48;131H15,1          Top[15;1H[?12l[?25h[?25l[48;131H15,2          Top[15;2H[?12l[?25h[?25l[48;131H15,3          Top[15;3H[?12l[?25h[?25l[48;131H15,4          Top[15;4H[?12l[?25h[?25l[48;131H15,5          Top[15;5H[?12l[?25h[?25l[48;131H15,6          Top[15;6H[?12l[?25h[?25l[48;131H15,7          Top[15;7H[?12l[?25h[?25l[48;131H15,8          Top[15;8H[?12l[?25h[?25l[48;131H15,9          Top[15;9H[?12l[?25h[?25l[48;131H15,10         Top[15;10H[?12l[?25h[?25l[48;131H15,11         Top[15;11H[?12l[?25h[?25l[48;131H15,12         Top[15;12H[?12l[?25h[?25l[48;131H15,13         Top[15;13H[?12l[?25h[?25l[1C[35m[46m([32C)[m[48;131H15,14         Top[15;14H[?12l[?25h[?25l[35m([32C)[m[48;131H15,15         Top[15;15H[?12l[?25h[?25l[48;131H15,16         Top[15;16H[?12l[?25h[?25l[48;131H15,17         Top[15;17H[?12l[?25h[?25l[48;131H16,17         Top[16;17H[?12l[?25h[?25l[48;131H16,16         Top[16;16H[?12l[?25h[?25l[48;131H16,15         Top[16;15H[?12l[?25h[?25l[1C[31m/../library/Zend/Application.[m[30m[43mphp[m';[16;50H[K[16;15H[?12l[?25h[?25l[31m/../library/Zend/Application.[m[30m[43mphp[m';[16;49H[K[16;15H[?12l[?25h[?25l[31m../library/Zend/Application.[m[30m[43mphp[m';[16;48H[K[16;15H[?12l[?25h[?25l[1C[31m/library/Zend/Application.[m[30m[43mphp[m';[16;47H[K[16;15H[?12l[?25h[?25l[31m/library/Zend/Application.[m[30m[43mphp[m';[16;46H[K[16;15H[?12l[?25h[?25l[31mlibrary/Zend/Application.[m[30m[43mphp[m';[16;45H[K[16;15H[?12l[?25h[?25l[31mibrary/Zend/Application.[m[30m[43mphp[m';[16;44H[K[16;15H[?12l[?25h[?25l[31mbrary/Zend/Application.[m[30m[43mphp[m';[16;43H[K[16;15H[?12l[?25h[?25l[31mrary/Zend/Application.[m[30m[43mphp[m';[16;42H[K[16;15H[?12l[?25h[?25l[31mary/Zend/Application.[m[30m[43mphp[m';[16;41H[K[16;15H[?12l[?25h[?25l[31mry/Zend/Application.[m[30m[43mphp[m';[16;40H[K[16;15H[?12l[?25h[?25l[31my/Zend/Application.[m[30m[43mphp[m';[16;39H[K[16;15H[?12l[?25h[?25l[31m/Zend/Application.[m[30m[43mphp[m';[16;38H[K[16;15H[?12l[?25h[?25l[31mZend/Application.[m[30m[43mphp[m';[16;37H[K[16;15H[?12l[?25h[?25l[48;1H[K[48;1H:[?12l[?25hx[?25l:x[?12l[?25h[?25l"scripts/load.sqlite.php" "scripts/load.sqlite.php" 72L, 2226C written
+[?1l>[?12l[?25h[?1049l]0;root@host:/var/www/southwebfactory.com/core[root@host core]# vim scripts/load.sqlite.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cphp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+PHP Warning:  require_once(Zend/Application.php): failed to open stream: No such file or directory in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 16
+
+Warning: require_once(Zend/Application.php): failed to open stream: No such file or directory in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 16
+PHP Fatal error:  require_once(): Failed opening required 'Zend/Application.php' (include_path='.:/usr/local/httpd/php/lib/php') in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 16
+
+Fatal error: require_once(): Failed opening required 'Zend/Application.php' (include_path='.:/usr/local/httpd/php/lib/php') in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 16
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# php scripts/load.sqlite.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvim[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[?1h=[1;48r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[48;1H"scripts/load.sqlite.php" "scripts/load.sqlite.php" 72L, 2226C[>c[1;1H[35m<?[m[30m[43mphp[m
+[34m// If any parameter is passed after the script name (like 1 or --withdata)
+// load the data file after the schema has loaded.[m
+[33m$[m[36mwithData[m [33m=[m [31mfalse[m;
+[33mif[m [35m([m[33misset[m[35m([m[33m$[m[36m_SERVER[m[35m[[m'[31margv[m'[35m][[m[31m1[m[35m]))[m [35m{[m
+    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;
+[35m}[m [33melseif[m [35m([m[36mdefined[m[35m([m'[31mAPPLICATION_LOAD_TESTDATA[m'[35m))[m [35m{[m
+    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;
+[35m}[m
+
+[34m// Initialize the application and bootstrap the database adapter[m
+[36mdefined[m[35m([m'[31mAPPLICATION_PATH[m'[35m)[m
+    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_PATH[m', [36mrealpath[m[35m([m[36mdirname[m[35m([m[31m__FILE__[m[35m)[m [33m.[m '[31m/../application[m'[35m))[m;
+[36mdefined[m[35m([m'[31mAPPLICATION_ENV[m'[35m)[m
+    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_ENV[m', '[31mdevelopment[m'[35m)[m;
+[35mrequire_once[m '[31mZend/Application.[m[30m[43mphp[m';
+[33m$[m[36mapplication[m [33m=[m [35mnew[m Zend_Application[35m([m
+    APPLICATION_ENV,
+    APPLICATION_PATH [33m.[m '[31m/configs/application.ini[m'
+[35m)[m;
+[33m$[m[36mbootstrap[m [33m=[m [33m$[m[36mapplication[m[32m->[mgetBootstrap[35m()[m;
+[33m$[m[36mbootstrap[m[32m->[mbootstrap[35m([m'[31mdb[m'[35m)[m;
+[33m$[m[36mdbAdapter[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetResource[35m([m'[31mdb[m'[35m)[m;
+
+[34m// let the user know whats going on (we are actually creating a 
+// database here)[m
+[33mif[m [35m([m'[31mtesting[m' [33m!=[m APPLICATION_ENV[35m)[m [35m{
+[m    [35mecho[m '[31mWriting Database Guestbook in (control-c to cancel): [m' [33m.[m PHP_EOL;
+    [33mfor[m [35m([m[33m$[m[36mx[m [33m=[m [31m5[m; [33m$[m[36mx[m [33m>[m [31m0[m; [33m$[m[36mx[m[33m--[m[35m)[m [35m{[30;9Hecho[m [33m$[m[36mx[m [33m.[m "[35m\r[m"; [36msleep[m[35m([m[31m1[m[35m)[m;
+    [35m}
+}[m
+
+[34m// Check to see if we have a database file already[m
+[33m$[m[36moptions[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetOption[35m([m'[31mresources[m'[35m)[m;
+[33m$[m[36mdbFile[m  [33m=[m [33m$[m[36moptions[m[35m[[m'[31mdb[m'[35m][[m'[31mparams[m'[35m][[m'[31mdbname[m'[35m][m;
+[33mif[m [35m([m[36mfile_exists[m[35m([m[33m$[m[36mdbFile[m[35m))[m [35m{[m
+    [36munlink[m[35m([m[33m$[m[36mdbFile[m[35m)[m;
+[35m}[m
+
+[34m// this block executes the actual statements that were loaded from 
+// the schema file.[m
+[33mtry[m [35m{[m
+    [33m$[m[36mschemaSql[m [33m=[m [36mfile_get_contents[m[35m([m[36mdirname[m[35m([m[31m__FILE__[m[35m)[m [33m.[m '[31m/schema.sqlite.sql[m'[35m)[m;
+    [34m// use the connection directly to load sql in batches[m
+    [33m$[m[36mdbAdapter[m[32m->[mgetConnection[35m()[m[32m->[mexec[35m([m[33m$[m[36mschemaSql[m[35m)[m;[48;131H16,1          Top[16;1H[?12l[?25h[?25l[48;131H17,1          Top[17;1H[?12l[?25h[?25l[48;131H18,1          Top[18;1H[?12l[?25h[?25l[48;131H19,1          Top[19;1H[?12l[?25h[?25l[17;36H[35m[46m(
+
+
+)[m[48;131H20,1          Top[20;1H[?12l[?25h[?25l[17;36H[35m(
+
+
+)[m[48;131H21,1          Top[21;1H[?12l[?25h[?25l[48;131H22,1          Top[22;1H[?12l[?25h[?25l[48;131H23,1          Top[23;1H[?12l[?25h[?25l[48;131H22,1          Top[22;1H[?12l[?25h[?25l[48;131H21,1          Top[21;1H[?12l[?25h[?25l[17;36H[35m[46m(
+
+
+)[m[48;131H20,1          Top[20;1H[?12l[?25h[?25l[17;36H[35m(
+
+
+)[m[48;131H19,1          Top[19;1H[?12l[?25h[?25l[48;131H18,1          Top[18;1H[?12l[?25h[?25l[48;131H17,1          Top[17;1H[?12l[?25h[?25l[48;131H16,1          Top[16;1H[?12l[?25h[?25l[48;131H15,1          Top[15;1H[?12l[?25h[?25l[48;131H16,1          Top[16;1H[?12l[?25h[?25l[48;131H17,1          Top[17;1H[?12l[?25h[?25l[48;131H18,1          Top[18;1H[?12l[?25h[?25l[48;131H17,1          Top[17;1H[?12l[?25h[?25l[48;131H16,1          Top[16;1H[?12l[?25h[?25l[48;131H17,1          Top[17;1H[?12l[?25h[?25l[48;131H18,1          Top[18;1H[?12l[?25h[?25l[48;131H19,1          Top[19;1H[?12l[?25h[?25l[17;36H[35m[46m(
+
+
+)[m[48;131H20,1          Top[20;1H[?12l[?25h[?25l[17;36H[35m(
+
+
+)[m[48;131H21,1          Top[21;1H[?12l[?25h[?25l[48;131H22,1          Top[22;1H[?12l[?25h[?25l[48;131H23,1          Top[23;1H[?12l[?25h[?25l[48;131H24,0-1        Top[24;1H[?12l[?25h[?25l[48;131H25,1          Top[25;1H[?12l[?25h[?25l[48;131H26,1          Top[26;1H[?12l[?25h[?25l[48;131H27,1          Top[27;1H[?12l[?25h[?25l[48;131H28,1          Top[28;1H[?12l[?25h[?25l[48;131H29,1          Top[29;1H[?12l[?25h[?25l[48;131H30,1          Top[30;1H[?12l[?25h[?25l[48;131H31,1          Top[31;1H[?12l[?25h[?25l[27;35H[35m[46m{[32;1H}[m[48;131H32,1          Top[32;1H[?12l[?25h[?25l[27;35H[35m{[32;1H}[m[48;131H33,0-1        Top[33;1H[?12l[?25h[?25l[48;131H34,1          Top[34;1H[?12l[?25h[?25l[48;131H33,0-1        Top[33;1H[?12l[?25h[?25l[27;35H[35m[46m{[32;1H}[m[48;131H32,1          Top[32;1H[?12l[?25h[?25l[27;35H[35m{[32;1H}[m[48;131H31,1          Top[31;1H[?12l[?25h[?25l[48;131H30,1          Top[30;1H[?12l[?25h[?25l[48;131H29,1          Top[29;1H[?12l[?25h[?25l[48;131H28,1          Top[28;1H[?12l[?25h[?25l[48;131H27,1          Top[27;1H[?12l[?25h[?25l[48;131H26,1          Top[26;1H[?12l[?25h[?25l[48;131H25,1          Top[25;1H[?12l[?25h[?25l[48;131H24,0-1        Top[24;1H[?12l[?25h[?25l[48;131H23,1          Top[23;1H[?12l[?25h[?25l[48;131H22,1          Top[22;1H[?12l[?25h[?25l[48;131H21,1          Top[21;1H[?12l[?25h[?25l[17;36H[35m[46m(
+
+
+)[m[48;131H20,1          Top[20;1H[?12l[?25h[?25l[17;36H[35m(
+
+
+)[m[48;131H19,1          Top[19;1H[?12l[?25h[?25l[48;131H18,1          Top[18;1H[?12l[?25h[?25l[48;131H17,1          Top[17;1H[?12l[?25h[?25l[48;131H16,1          Top[16;1H[?12l[?25h[?25l[48;131H15,1          Top[15;1H[?12l[?25h[?25l[48;131H15,2          Top[15;2H[?12l[?25h[?25l[48;131H15,3          Top[15;3H[?12l[?25h[?25l[48;131H15,4          Top[15;4H[?12l[?25h[?25l[48;131H15,5          Top[15;5H[?12l[?25h[?25l[48;131H15,6          Top[15;6H[?12l[?25h[?25l[48;131H15,7          Top[15;7H[?12l[?25h[?25l[48;131H15,8          Top[15;8H[?12l[?25h[?25l[48;131H15,9          Top[15;9H[?12l[?25h[?25l[48;131H15,10         Top[15;10H[?12l[?25h[?25l[48;131H15,11         Top[15;11H[?12l[?25h[?25l[48;131H15,12         Top[15;12H[?12l[?25h[?25l[48;131H15,13         Top[15;13H[?12l[?25h[?25l[1C[35m[46m([32C)[m[48;131H15,14         Top[15;14H[?12l[?25h[?25l[35m([32C)[m[48;131H15,15         Top[15;15H[?12l[?25h[?25l[48;131H15,16         Top[15;16H[?12l[?25h[?25l[48;131H15,17         Top[15;17H[?12l[?25h[?25l[48;131H15,18         Top[15;18H[?12l[?25h[?25l[48;131H15,19         Top[15;19H[?12l[?25h[?25l[48;131H16,19         Top[16;19H[?12l[?25h[?25l[48;131H17,19         Top[17;19H[?12l[?25h[?25l[48;131H17,18         Top[17;18H[?12l[?25h[?25l[48;131H17,17         Top[17;17H[?12l[?25h[?25l[48;131H16,17         Top[16;17H[?12l[?25h[?25l[48;131H16,16         Top[16;16H[?12l[?25h[?25l[48;131H16,15         Top[16;15H[?12l[?25h[?25l[48;1H[1m-- INSERT --[m[48;13H[K[48;131H16,15         Top[16;15H[?12l[?25h[?25l[31m/Zend/Application.[m[30m[43mphp[m';[48;131H16,16         Top[16;16H[?12l[?25h[?25l[31mvZend/Application.[m[30m[43mphp[m';[48;131H16,17         Top[16;17H[?12l[?25h[?25l[31maZend/Application.[m[30m[43mphp[m';[48;131H16,18         Top[16;18H[?12l[?25h[?25l[31mrZend/Application.[m[30m[43mphp[m';[48;131H16,19         Top[16;19H[?12l[?25h[?25l[31m/Zend/Application.[m[30m[43mphp[m';[48;131H16,20         Top[16;20H[?12l[?25h[?25l[31mwZend/Application.[m[30m[43mphp[m';[48;131H16,21         Top[16;21H[?12l[?25h[?25l[31mwZend/Application.[m[30m[43mphp[m';[48;131H16,22         Top[16;22H[?12l[?25h[?25l[31mwZend/Application.[m[30m[43mphp[m';[48;131H16,23         Top[16;23H[?12l[?25h[?25l[31m/Zend/Application.[m[30m[43mphp[m';[48;131H16,24         Top[16;24H[?12l[?25h[?25l[31mhZend/Application.[m[30m[43mphp[m';[48;131H16,25         Top[16;25H[?12l[?25h[?25l[31mtZend/Application.[m[30m[43mphp[m';[48;131H16,26         Top[16;26H[?12l[?25h[?25l[31mmZend/Application.[m[30m[43mphp[m';[48;131H16,27         Top[16;27H[?12l[?25h[?25l[31mlZend/Application.[m[30m[43mphp[m';[48;131H16,28         Top[16;28H[?12l[?25h[?25l[31mZend/Application.[m[30m[43mphp[m';[16;49H[K[48;131H16,27         Top[16;27H[?12l[?25h[?25l[31mZend/Application.[m[30m[43mphp[m';[16;48H[K[48;131H16,26         Top[16;26H[?12l[?25h[?25l[31mZend/Application.[m[30m[43mphp[m';[16;47H[K[48;131H16,25         Top[16;25H[?12l[?25h[?25l[31mZend/Application.[m[30m[43mphp[m';[16;46H[K[48;131H16,24         Top[16;24H[?12l[?25h[?25l[48;131H16,25         Top[16;25H[?12l[?25h[?25l[48;131H16,26         Top[16;26H[?12l[?25h[?25l[48;131H16,27         Top[16;27H[?12l[?25h[?25l[48;131H16,28         Top[16;28H[?12l[?25h[?25l[48;131H16,30         Top[16;30H[?12l[?25h[?25l[48;131H16,31         Top[16;31H[?12l[?25h[?25l[48;131H16,32         Top[16;32H[?12l[?25h[?25l[48;131H16,33         Top[16;33H[?12l[?25h[?25l[48;131H16,34         Top[16;34H[?12l[?25h[?25l[48;131H16,36         Top[16;36H[?12l[?25h[?25l[48;131H16,37         Top[16;37H[?12l[?25h[?25l[48;131H16,38         Top[16;38H[?12l[?25h[?25l[48;131H16,39         Top[16;39H[?12l[?25h[?25l[48;131H16,38         Top[16;38H[?12l[?25h[?25l[48;131H16,37         Top[16;37H[?12l[?25h[?25l[48;131H16,36         Top[16;36H[?12l[?25h[?25l[48;131H16,35         Top[16;35H[?12l[?25h[?25l[48;131H16,34         Top[16;34H[?12l[?25h[?25l[48;131H16,33         Top[16;33H[?12l[?25h[48;1H[K[16;32H[?25l[48;131H16,32         Top[16;32H[?12l[?25h[?25l[48;131H[K[48;1H:[?12l[?25hx[?25l:x[?12l[?25h[?25l"scripts/load.sqlite.php" "scripts/load.sqlite.php" 72L, 2235C written
+[?1l>[?12l[?25h[?1049l]0;root@host:/var/www/southwebfactory.com/core[root@host core]# vim scripts/load.sqlite.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cphp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+PHP Warning:  require_once(/var/www/Zend/Application.php): failed to open stream: No such file or directory in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 16
+
+Warning: require_once(/var/www/Zend/Application.php): failed to open stream: No such file or directory in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 16
+PHP Fatal error:  require_once(): Failed opening required '/var/www/Zend/Application.php' (include_path='.:/usr/local/httpd/php/lib/php') in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 16
+
+Fatal error: require_once(): Failed opening required '/var/www/Zend/Application.php' (include_path='.:/usr/local/httpd/php/lib/php') in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 16
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# php scripts/load.sqlite.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvim[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# ccd[K[K[Kvim /var/www/Zend/Ap[K
+Acl/      Acl.php   Amf/      Auth/     Auth.php  
+[root@host core]# vim /var/www/Zend/A
+Acl/      Acl.php   Amf/      Auth/     Auth.php  
+[root@host core]# vim /var/www/Zend/A[K[KFramework-1.8.1
+ZendFramework-1.8.1/        ZendFramework-1.8.1.tar.gz  
+[root@host core]# vim /var/www/ZendFramework-1.8.1
+ZendFramework-1.8.1/        ZendFramework-1.8.1.tar.gz  
+[root@host core]# vim /var/www/ZendFramework-1.8.1'/[K[K/
+bin/         demos/       externals/   extras/      INSTALL.txt  library/     LICENSE.txt  README.txt   tests/       
+[root@host core]# vim /var/www/ZendFramework-1.8.1/
+bin/         demos/       externals/   extras/      INSTALL.txt  library/     LICENSE.txt  README.txt   tests/       
+[root@host core]# vim /var/www/ZendFramework-1.8.1/a[Klibrary/Zend/
+Acl/             Config.php       Dojo/            Gdata.php        Locale/          Navigation.php   Search/          Translate/
+Acl.php          Console/         Dojo.php         Http/            Locale.php       OpenId/          Server/          Translate.php
+Amf/             Controller/      Dom/             InfoCard/        Log/             OpenId.php       Service/         Uri/
+Application/     Crypt/           Exception.php    InfoCard.php     Log.php          Paginator/       Session/         Uri.php
+Application.php  Crypt.php        Feed/            Json/            Mail/            Paginator.php    Session.php      Validate/
+Auth/            Currency/        Feed.php         Json.php         Mail.php         Pdf/             Soap/            Validate.php
+Auth.php         Currency.php     File/            Layout/          Measure/         Pdf.php          Tag/             Version.php
+Cache/           Date/            Filter/          Layout.php       Memory/          ProgressBar/     Test/            View/
+Cache.php        Date.php         Filter.php       Ldap/            Memory.php       ProgressBar.php  Text/            View.php
+Captcha/         Db/              Form/            Ldap.php         Mime/            Reflection/      TimeSync/        Wildfire/
+CodeGenerator/   Db.php           Form.php         Loader/          Mime.php         Registry.php     TimeSync.php     XmlRpc/
+Config/          Debug.php        Gdata/           Loader.php       Navigation/      Rest/            Tool/            
+[root@host core]# vim /var/www/ZendFramework-1.8.1/library/Zend/a[KApplication
+Application/     Application.php  
+[root@host core]# vim /var/www/ZendFramework-1.8.1/library/Zend/Application.php 
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# php scripts/load.sqlite.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvim[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\[K
+[?1049h[?1h=[1;48r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[48;1H"scripts/load.sqlite.php" "scripts/load.sqlite.php" 72L, 2235C[>c[1;1H[35m<?[m[30m[43mphp[m
+[34m// If any parameter is passed after the script name (like 1 or --withdata)
+// load the data file after the schema has loaded.[m
+[33m$[m[36mwithData[m [33m=[m [31mfalse[m;
+[33mif[m [35m([m[33misset[m[35m([m[33m$[m[36m_SERVER[m[35m[[m'[31margv[m'[35m][[m[31m1[m[35m]))[m [35m{[m
+    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;
+[35m}[m [33melseif[m [35m([m[36mdefined[m[35m([m'[31mAPPLICATION_LOAD_TESTDATA[m'[35m))[m [35m{[m
+    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;
+[35m}[m
+
+[34m// Initialize the application and bootstrap the database adapter[m
+[36mdefined[m[35m([m'[31mAPPLICATION_PATH[m'[35m)[m
+    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_PATH[m', [36mrealpath[m[35m([m[36mdirname[m[35m([m[31m__FILE__[m[35m)[m [33m.[m '[31m/../application[m'[35m))[m;
+[36mdefined[m[35m([m'[31mAPPLICATION_ENV[m'[35m)[m
+    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_ENV[m', '[31mdevelopment[m'[35m)[m;
+[35mrequire_once[m '[31m/var/www/Zend/Application.[m[30m[43mphp[m';
+[33m$[m[36mapplication[m [33m=[m [35mnew[m Zend_Application[35m([m
+    APPLICATION_ENV,
+    APPLICATION_PATH [33m.[m '[31m/configs/application.ini[m'
+[35m)[m;
+[33m$[m[36mbootstrap[m [33m=[m [33m$[m[36mapplication[m[32m->[mgetBootstrap[35m()[m;
+[33m$[m[36mbootstrap[m[32m->[mbootstrap[35m([m'[31mdb[m'[35m)[m;
+[33m$[m[36mdbAdapter[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetResource[35m([m'[31mdb[m'[35m)[m;
+
+[34m// let the user know whats going on (we are actually creating a 
+// database here)[m
+[33mif[m [35m([m'[31mtesting[m' [33m!=[m APPLICATION_ENV[35m)[m [35m{
+[m    [35mecho[m '[31mWriting Database Guestbook in (control-c to cancel): [m' [33m.[m PHP_EOL;
+    [33mfor[m [35m([m[33m$[m[36mx[m [33m=[m [31m5[m; [33m$[m[36mx[m [33m>[m [31m0[m; [33m$[m[36mx[m[33m--[m[35m)[m [35m{[30;9Hecho[m [33m$[m[36mx[m [33m.[m "[35m\r[m"; [36msleep[m[35m([m[31m1[m[35m)[m;
+    [35m}
+}[m
+
+[34m// Check to see if we have a database file already[m
+[33m$[m[36moptions[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetOption[35m([m'[31mresources[m'[35m)[m;
+[33m$[m[36mdbFile[m  [33m=[m [33m$[m[36moptions[m[35m[[m'[31mdb[m'[35m][[m'[31mparams[m'[35m][[m'[31mdbname[m'[35m][m;
+[33mif[m [35m([m[36mfile_exists[m[35m([m[33m$[m[36mdbFile[m[35m))[m [35m{[m
+    [36munlink[m[35m([m[33m$[m[36mdbFile[m[35m)[m;
+[35m}[m
+
+[34m// this block executes the actual statements that were loaded from 
+// the schema file.[m
+[33mtry[m [35m{[m
+    [33m$[m[36mschemaSql[m [33m=[m [36mfile_get_contents[m[35m([m[36mdirname[m[35m([m[31m__FILE__[m[35m)[m [33m.[m '[31m/schema.sqlite.sql[m'[35m)[m;
+    [34m// use the connection directly to load sql in batches[m
+    [33m$[m[36mdbAdapter[m[32m->[mgetConnection[35m()[m[32m->[mexec[35m([m[33m$[m[36mschemaSql[m[35m)[m;[48;131H16,1          Top[16;1H[?12l[?25h[?25l[48;131H17,1          Top[17;1H[?12l[?25h[?25l[48;131H18,1          Top[18;1H[?12l[?25h[?25l[48;131H19,1          Top[19;1H[?12l[?25h[?25l[48;131H19,2          Top[19;2H[?12l[?25h[?25l[48;131H18,2          Top[18;2H[?12l[?25h[?25l[48;131H18,3          Top[18;3H[?12l[?25h[?25l[48;131H18,4          Top[18;4H[?12l[?25h[?25l[48;131H18,5          Top[18;5H[?12l[?25h[?25l[48;131H18,6          Top[18;6H[?12l[?25h[?25l[48;131H18,7          Top[18;7H[?12l[?25h[?25l[48;131H18,8          Top[18;8H[?12l[?25h[?25l[48;131H18,9          Top[18;9H[?12l[?25h[?25l[48;131H18,10         Top[18;10H[?12l[?25h[?25l[48;131H18,11         Top[18;11H[?12l[?25h[?25l[48;131H18,12         Top[18;12H[?12l[?25h[?25l[48;131H18,13         Top[18;13H[?12l[?25h[?25l[48;131H18,14         Top[18;14H[?12l[?25h[?25l[48;131H18,15         Top[18;15H[?12l[?25h[?25l[48;131H18,16         Top[18;16H[?12l[?25h[?25l[48;131H18,17         Top[18;17H[?12l[?25h[?25l[48;131H17,17         Top[17;17H[?12l[?25h[?25l[48;131H17,16         Top[17;16H[?12l[?25h[?25l[48;131H16,16         Top[16;16H[?12l[?25h[?25l[48;131H16,15         Top[16;15H[?12l[?25h[?25l[48;1H[1m-- INSERT --[m[48;13H[K[48;131H16,15         Top[16;15H[?12l[?25h[?25l[13C[31mFramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m[31m/var/www/Zend/Application.[m[30m[43mphp[m';[48;131H16,72         Top[16;72H[?12l[?25h[?25l[31mvar/www/Zend/Application.[m[30m[43mphp[m';[16;102H[K[16;72H[?12l[?25h[?25l[31mar/www/Zend/Application.[m[30m[43mphp[m';[16;101H[K[16;72H[?12l[?25h[?25l[31mr/www/Zend/Application.[m[30m[43mphp[m';[16;100H[K[16;72H[?12l[?25h[?25l[31m/www/Zend/Application.[m[30m[43mphp[m';[16;99H[K[16;72H[?12l[?25h[?25l[31mww/Zend/Application.[m[30m[43mph[m[1C';[16;97H[K[16;72H[?12l[?25h[?25l[1C[31m/Zend/Application.[m[30m[43mphp[m';[16;96H[K[16;72H[?12l[?25h[?25l[31m/Zend/Application.[m[30m[43mphp[m';[16;95H[K[16;72H[?12l[?25h[?25l[31mZend/Application.[m[30m[43mphp[m';[16;94H[K[16;72H[?12l[?25h[?25l[31mend/Application.[m[30m[43mphp[m';[16;93H[K[16;72H[?12l[?25h[?25l[31mnd/Application.[m[30m[43mphp[m';[16;92H[K[16;72H[?12l[?25h[?25l[31md/Application.[m[30m[43mphp[m';[16;91H[K[16;72H[?12l[?25h[?25l[31m/Application.[m[30m[43mphp[m';[16;90H[K[16;72H[?12l[?25h[?25l[31mApplication.[m[30m[43mphp[m';[16;89H[K[16;72H[?12l[?25h[?25l[31mpplication.[m[30m[43mphp[m';[16;88H[K[16;72H[?12l[?25h[?25l[1C[31mlication.[m[30m[43mphp[m';[16;87H[K[16;72H[?12l[?25h[?25l[31mlication.[m[30m[43mphp[m';[16;86H[K[16;72H[?12l[?25h[?25l[31mication.[m[30m[43mphp[m';[16;85H[K[16;72H[?12l[?25h[?25l[31mcation.[m[30m[43mphp[m';[16;84H[K[16;72H[?12l[?25h[?25l[31mation.[m[30m[43mphp[m';[16;83H[K[16;72H[?12l[?25h[?25l[31mtion.[m[30m[43mphp[m';[16;82H[K[16;72H[?12l[?25h[?25l[31mion.[m[30m[43mphp[m';[16;81H[K[16;72H[?12l[?25h[?25l[31mon.[m[30m[43mphp[m';[16;80H[K[16;72H[?12l[?25h[?25l[31mn.[m[30m[43mphp[m';[16;79H[K[16;72H[?12l[?25h[?25l[31m.[m[30m[43mphp[m';[16;78H[K[16;72H[?12l[?25h[?25l[30m[43mphp[m';[16;77H[K[16;72H[?12l[?25h[?25l[31mhp[m';[16;76H[K[16;72H[?12l[?25h[?25l[31mp[m';[16;75H[K[16;72H[?12l[?25h[?25l';[16;74H[K[16;72H[?12l[?25h[48;1H[K[16;71H[?25l[48;131H16,71         Top[16;71H[?12l[?25h[?25l[48;131H[K[48;1H:[?12l[?25hx[?25l:x[?12l[?25h[?25l"scripts/load.sqlite.php" "scripts/load.sqlite.php" 72L, 2263C written
+[?1l>[?12l[?25h[?1049l]0;root@host:/var/www/southwebfactory.com/core[root@host core]# vim scripts/load.sqlite.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cphp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+PHP Warning:  require_once(Zend/Loader/Autoloader.php): failed to open stream: No such file or directory in /var/www/ZendFramework-1.8.1/library/Zend/Application.php on line 73
+
+Warning: require_once(Zend/Loader/Autoloader.php): failed to open stream: No such file or directory in /var/www/ZendFramework-1.8.1/library/Zend/Application.php on line 73
+PHP Fatal error:  require_once(): Failed opening required 'Zend/Loader/Autoloader.php' (include_path='.:/usr/local/httpd/php/lib/php') in /var/www/ZendFramework-1.8.1/library/Zend/Application.php on line 73
+
+Fatal error: require_once(): Failed opening required 'Zend/Loader/Autoloader.php' (include_path='.:/usr/local/httpd/php/lib/php') in /var/www/ZendFramework-1.8.1/library/Zend/Application.php on line 73
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# php scripts/load.sqlite.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvim[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[?1h=[1;48r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[48;1H"scripts/load.sqlite.php" "scripts/load.sqlite.php" 72L, 2263C[>c[1;1H[35m<?[m[30m[43mphp[m
+[34m// If any parameter is passed after the script name (like 1 or --withdata)
+// load the data file after the schema has loaded.[m
+[33m$[m[36mwithData[m [33m=[m [31mfalse[m;
+[33mif[m [35m([m[33misset[m[35m([m[33m$[m[36m_SERVER[m[35m[[m'[31margv[m'[35m][[m[31m1[m[35m]))[m [35m{[m
+    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;
+[35m}[m [33melseif[m [35m([m[36mdefined[m[35m([m'[31mAPPLICATION_LOAD_TESTDATA[m'[35m))[m [35m{[m
+    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;
+[35m}[m
+
+[34m// Initialize the application and bootstrap the database adapter[m
+[36mdefined[m[35m([m'[31mAPPLICATION_PATH[m'[35m)[m
+    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_PATH[m', [36mrealpath[m[35m([m[36mdirname[m[35m([m[31m__FILE__[m[35m)[m [33m.[m '[31m/../application[m'[35m))[m;
+[36mdefined[m[35m([m'[31mAPPLICATION_ENV[m'[35m)[m
+    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_ENV[m', '[31mdevelopment[m'[35m)[m;
+[35mrequire_once[m '[31m/var/www/ZendFramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';
+[33m$[m[36mapplication[m [33m=[m [35mnew[m Zend_Application[35m([m
+    APPLICATION_ENV,
+    APPLICATION_PATH [33m.[m '[31m/configs/application.ini[m'
+[35m)[m;
+[33m$[m[36mbootstrap[m [33m=[m [33m$[m[36mapplication[m[32m->[mgetBootstrap[35m()[m;
+[33m$[m[36mbootstrap[m[32m->[mbootstrap[35m([m'[31mdb[m'[35m)[m;
+[33m$[m[36mdbAdapter[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetResource[35m([m'[31mdb[m'[35m)[m;
+
+[34m// let the user know whats going on (we are actually creating a 
+// database here)[m
+[33mif[m [35m([m'[31mtesting[m' [33m!=[m APPLICATION_ENV[35m)[m [35m{
+[m    [35mecho[m '[31mWriting Database Guestbook in (control-c to cancel): [m' [33m.[m PHP_EOL;
+    [33mfor[m [35m([m[33m$[m[36mx[m [33m=[m [31m5[m; [33m$[m[36mx[m [33m>[m [31m0[m; [33m$[m[36mx[m[33m--[m[35m)[m [35m{[30;9Hecho[m [33m$[m[36mx[m [33m.[m "[35m\r[m"; [36msleep[m[35m([m[31m1[m[35m)[m;
+    [35m}
+}[m
+
+[34m// Check to see if we have a database file already[m
+[33m$[m[36moptions[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetOption[35m([m'[31mresources[m'[35m)[m;
+[33m$[m[36mdbFile[m  [33m=[m [33m$[m[36moptions[m[35m[[m'[31mdb[m'[35m][[m'[31mparams[m'[35m][[m'[31mdbname[m'[35m][m;
+[33mif[m [35m([m[36mfile_exists[m[35m([m[33m$[m[36mdbFile[m[35m))[m [35m{[m
+    [36munlink[m[35m([m[33m$[m[36mdbFile[m[35m)[m;
+[35m}[m
+
+[34m// this block executes the actual statements that were loaded from 
+// the schema file.[m
+[33mtry[m [35m{[m
+    [33m$[m[36mschemaSql[m [33m=[m [36mfile_get_contents[m[35m([m[36mdirname[m[35m([m[31m__FILE__[m[35m)[m [33m.[m '[31m/schema.sqlite.sql[m'[35m)[m;
+    [34m// use the connection directly to load sql in batches[m
+    [33m$[m[36mdbAdapter[m[32m->[mgetConnection[35m()[m[32m->[mexec[35m([m[33m$[m[36mschemaSql[m[35m)[m;[48;131H16,1          Top[16;1H[?12l[?25h[?25l[48;131H16,2          Top[16;2H[?12l[?25h[?25l[48;131H16,3          Top[16;3H[?12l[?25h[?25l[48;131H16,4          Top[16;4H[?12l[?25h[?25l[48;131H16,5          Top[16;5H[?12l[?25h[?25l[48;131H16,6          Top[16;6H[?12l[?25h[?25l[48;131H16,7          Top[16;7H[?12l[?25h[?25l[48;131H16,8          Top[16;8H[?12l[?25h[?25l[48;131H16,9          Top[16;9H[?12l[?25h[?25l[48;131H16,10         Top[16;10H[?12l[?25h[?25l[48;131H16,11         Top[16;11H[?12l[?25h[?25l[48;131H16,12         Top[16;12H[?12l[?25h[?25l[48;131H16,13         Top[16;13H[?12l[?25h[?25l[48;131H16,14         Top[16;14H[?12l[?25h[?25l[48;131H16,15         Top[16;15H[?12l[?25h[?25l[31mvar/www/ZendFramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;73H[K[16;15H[?12l[?25h[?25l[31mar/www/ZendFramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;72H[K[16;15H[?12l[?25h[?25l[31mr/www/ZendFramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;71H[K[16;15H[?12l[?25h[?25l[31m/www/ZendFramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;70H[K[16;15H[?12l[?25h[?25l[31mwww/ZendFramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;69H[K[16;15H[?12l[?25h[?25l[2C[31m/ZendFramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;68H[K[16;15H[?12l[?25h[?25l[1C[31m/ZendFramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;67H[K[16;15H[?12l[?25h[?25l[31m/ZendFramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;66H[K[16;15H[?12l[?25h[?25l[31mZendFramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;65H[K[16;15H[?12l[?25h[?25l[31mendFramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;64H[K[16;15H[?12l[?25h[?25l[31mndFramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;63H[K[16;15H[?12l[?25h[?25l[31mdFramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;62H[K[16;15H[?12l[?25h[?25l[31mFramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;61H[K[16;15H[?12l[?25h[?25l[31mramework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;60H[K[16;15H[?12l[?25h[?25l[31mamework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;59H[K[16;15H[?12l[?25h[?25l[31mmework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;58H[K[16;15H[?12l[?25h[?25l[31mework-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;57H[K[16;15H[?12l[?25h[?25l[31mwork-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;56H[K[16;15H[?12l[?25h[?25l[31mork-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;55H[K[16;15H[?12l[?25h[?25l[31mrk-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;54H[K[16;15H[?12l[?25h[?25l[31mk-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;53H[K[16;15H[?12l[?25h[?25l[31m-1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;52H[K[16;15H[?12l[?25h[?25l[31m1.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;51H[K[16;15H[?12l[?25h[?25l[31m.8.1/library/Zend/Application.[m[30m[43mphp[m';[16;50H[K[16;15H[?12l[?25h[?25l[31m8.1/library/Zend/Application.[m[30m[43mphp[m';[16;49H[K[16;15H[?12l[?25h[?25l[31m.1/library/Zend/Application.[m[30m[43mphp[m';[16;48H[K[16;15H[?12l[?25h[?25l[31m1/library/Zend/Application.[m[30m[43mphp[m';[16;47H[K[16;15H[?12l[?25h[?25l[31m/library/Zend/Application.[m[30m[43mphp[m';[16;46H[K[16;15H[?12l[?25h[?25l[31mlibrary/Zend/Application.[m[30m[43mphp[m';[16;45H[K[16;15H[?12l[?25h[?25l[31mibrary/Zend/Application.[m[30m[43mphp[m';[16;44H[K[16;15H[?12l[?25h[?25l[31mbrary/Zend/Application.[m[30m[43mphp[m';[16;43H[K[16;15H[?12l[?25h[?25l[31mrary/Zend/Application.[m[30m[43mphp[m';[16;42H[K[16;15H[?12l[?25h[?25l[31mary/Zend/Application.[m[30m[43mphp[m';[16;41H[K[16;15H[?12l[?25h[?25l[31mry/Zend/Application.[m[30m[43mphp[m';[16;40H[K[16;15H[?12l[?25h[?25l[31my/Zend/Application.[m[30m[43mphp[m';[16;39H[K[16;15H[?12l[?25h[?25l[31m/Zend/Application.[m[30m[43mphp[m';[16;38H[K[16;15H[?12l[?25h[?25l[31mZend/Application.[m[30m[43mphp[m';[16;37H[K[16;15H[?12l[?25h[?25l[48;1H[K[48;1H:[?12l[?25hw[?25l:w[?12l[?25h[?25l"scripts/load.sqlite.php" "scripts/load.sqlite.php" 72L, 2226C written[86C16,15         Top"scripts/load.sqlite.php" 72L, 2226C written[48;131H[K[48;131H16,15         Top[16;15H[?12l[?25h[?25l[48;131H15,15         Top[15;15H[?12l[?25h[?25l[48;131H14,15         Top[14;15H[?12l[?25h[?25l[48;131H13,15         Top[13;15H[?12l[?25h[?25l[48;131H12,15         Top[12;15H[?12l[?25h[?25l[48;131H11,15         Top[11;15H[?12l[?25h[?25l[48;131H10,0-1        Top[10;1H[?12l[?25h[?25l[48;131H1,1           Top[1;1H[?12l[?25h[?25l[48;1H[K[48;1H:[?12l[?25he[?25l:e[?12l[?25h [?25l:e [?12l[?25h/[?25l:e /[?12l[?25hv[?25l:e /v[?12l[?25ha[?25l:e /va[?12l[?25hr[?25l:e /var[?12l[?25h...[?25l:e /var/[48;9H[K[48;9H:e /var/[?12l[?25hw[?25l:e /var/w[?12l[?25h...[?25l:e /var/www/:e /var/www/[?12l[?25ht[?25l:e /var/www/t[?12l[?25hi[?25l:e /var/www/ti[?12l[?25h...[?25l:e /var/www/titulosregionales.com/:e /var/www/titulosregionales.com/[?12l[?25hi[?25l:e /var/www/titulosregionales.com/i[?12l[?25hn[?25l:e /var/www/titulosregionales.com/in[?12l[?25hd[?25l:e /var/www/titulosregionales.com/ind[?12l[?25he[?25l:e /var/www/titulosregionales.com/inde[?12l[?25h...[?25l:e /var/www/titulosregionales.com/index.php:e /var/www/titulosregionales.com/index.php[?12l[?25h[?25l"/var/www/titulosregionales.com/index.php" "/var/www/titulosregionales.com/index.php" 37L, 1003C[2;2H[34m**[m[2;4H[K[3;1H[34m * Definición de directorios[m[3;29H[K[4;1H[34m */[m[4;4H[K[5;1H[36mset_include_path[m[35m([m'[31mlibrary[m' [33m.[m PATH_SEPARATOR [33m.[m
+                 '[31mconfig[m' [33m.[m PATH_SEPARATOR [33m.[m
+                 '[31musite/models[m' [33m.[m PATH_SEPARATOR [33m.[m
+                 '[1C[31msite/controllers[m' [33m.[m PATH_SEPARATOR [33m.[m PATH_SEPARATOR [33m.[m
+ [16C[36mget_include_path[m[35m())[m;
+[34m/**
+ * Carga de clases que sean necesarias[m[11;39H[K[12;1H[34m */[m[12;4H[K[13;1H[35minclude[m "[31mZend/Loader.[m[30m[43mphp[m";[13;27H[K[14;1HZend_Loader[33m::[mregisterAutoload[35m()[m;
+[34m/**[m[15;5H[K[16;1H[34m * Configuración inicial[m[16;25H[K[17;1H[34m */[m[17;4H[K[18;1H[36merror_reporting[m[35m([m[31mE_ALL[m [33m|[m [31mE_STRICT[m[35m)[m;
+date_default_timezone_set[35m([m'[31mAmerica/Buenos_Aires[m'[35m)[m;
+[34m/**
+ * Setup controller[m[21;20H[K[22;1H[34m */[m[22;4H[K[23;2H[36mcontroller[m [33m=[m Zend_Controller_Front[33m::[mgetInstance[35m()[m;
+[33m$[m[36mcontroller[m[32m->[msetControllerDirectory[35m([m [32marray[m[35m([m
+    '[31mdefault[m' [33m=>[m '[31m./usite/controllers[m',[25;40H[K[26;1H    '[31madmin[m' [33m=>[m '[31m./admin/controllers[m'[35m)[m [35m)[m;
+[33m$[m[36mcontroller[m[32m->[mthrowExceptions[35m([m [31mtrue[m [35m)[m;
+[33m$[m[36mrouter[m [33m=[m [33m$[m[36mcontroller[m[32m->[mgetRouter[35m()[m;[28;36H[K[29;1H[33m$[m[36mroute[m [33m=[m [35mnew[m Zend_Controller_Router_Route_Regex[35m([m
+    '[31m^sitemap.xml$[m',[30;21H[K[31;5H[32marray[m[35m([m
+ [7C'[31mcontroller[m' [33m=>[m '[31msitemaps[m',[33;9H'[31maction[m'     [33m=>[m '[31mindex[m'   [35m))[m;
+[33m$[m[36mrouter[m[32m->[maddRoute[35m([m'[31msitemap[m', [33m$[m[36mroute[m[35m)[m;[34;38H[K[35;1H[K[36;1H[34m// DISPATCH![m[36;13H[K[37;1H[33m$[m[36mcontroller[m[32m->[mdispatch[35m()[m;[37;25H[K[38;1H[1m[34m~                                                                                                                                                   [39;1H~                                                                                                                                                   [40;1H~                                                                                                                                                   [41;1H~                                                                                                                                                   [42;1H~                                                                                                                                                   [43;1H~                                                                                                                                                   [44;1H~                                                                                                                                                   [45;1H~                                                                                                                                                   [46;1H~                                                                                                                                                   [47;1H~                                                                                                                                                   [m[48;131H1,1           All[1;1H[?12l[?25h[?25l[48;131H2,1           All[2;1H[?12l[?25h[?25l[48;131H3,1           All[3;1H[?12l[?25h[?25l[48;131H4,1           All[4;1H[?12l[?25h[?25l[48;131H5,1           All[5;1H[?12l[?25h[?25l[48;131H6,1-4         All[6;4H[?12l[?25h[?25l[48;131H7,1-4         All[7;4H[?12l[?25h[?25l[48;131H8,1-4         All[8;4H[?12l[?25h[?25l[48;131H9,1           All[9;1H[?12l[?25h[?25l[48;131H10,1          All[10;1H[?12l[?25h[?25l[48;131H11,1          All[11;1H[?12l[?25h[?25l[48;131H12,1          All[12;1H[?12l[?25h[?25l[48;131H13,1          All[13;1H[?12l[?25h[?25l[48;131H14,1          All[14;1H[?12l[?25h[?25l[48;131H15,1          All[15;1H[?12l[?25h[?25l[48;131H16,1          All[16;1H[?12l[?25h[?25l[48;131H17,1          All[17;1H[?12l[?25h[?25l[48;131H18,1          All[18;1H[?12l[?25h[?25l[48;131H19,1          All[19;1H[?12l[?25h[?25l[48;131H20,1          All[20;1H[?12l[?25h[?25l[48;131H21,1          All[21;1H[?12l[?25h[?25l[48;131H20,1          All[20;1H[?12l[?25h[?25l[48;131H19,1          All[19;1H[?12l[?25h[?25l[48;131H18,1          All[18;1H[?12l[?25h[?25l[48;131H17,1          All[17;1H[?12l[?25h[?25l[48;131H16,1          All[16;1H[?12l[?25h[?25l[48;131H15,1          All[15;1H[?12l[?25h[?25l[48;131H14,1          All[14;1H[?12l[?25h[?25l[48;131H13,1          All[13;1H[?12l[?25h[?25l[48;131H12,1          All[12;1H[?12l[?25h[?25l[48;131H11,1          All[11;1H[?12l[?25h[?25l[48;131H10,1          All[10;1H[?12l[?25h[?25l[48;131H9,1           All[9;1H[?12l[?25h[?25l[48;131H8,1-4         All[8;4H[?12l[?25h[?25l[48;131H7,1-4         All[7;4H[?12l[?25h[?25l[48;131H6,1-4         All[6;4H[?12l[?25h[?25l[48;131H5,1           All[5;1H[?12l[?25h[?25l[48;131H4,1           All[4;1H[?12l[?25h[?25l[48;131H3,1           All[3;1H[?12l[?25h[?25l[48;131H2,1           All[2;1H[?12l[?25h[?25l[48;131H1,1           All[1;1H[?12l[?25h[?25l[48;131H2,1           All[2;1H[?12l[?25h[?25l[48;131H3,1           All[3;1H[?12l[?25h[?25l[48;131H4,1           All[4;1H[?12l[?25h[?25l[48;131H5,1           All[5;1H[?12l[?25h[?25l[48;1H[1m-- VISUAL --[m[48;13H[K[48;131H5,1           All[5;1H[?12l[?25h[?25l[7m[36mset_include_path[m[7m[35m([m[7m'[m[7m[31mlibrary[m[7m' [m[7m[33m.[m[7m PATH_SEPARATOR [m[7m[33m.[m[7m  
+   [m[48;131H6,1-4         All[6;4H[?12l[?25h[?25l[7m              '[m[7m[31mconfig[m[7m' [m[7m[33m.[m[7m PATH_SEPARATOR [m[7m[33m.[m[7m  
+   [m[48;131H7,1-4         All[7;4H[?12l[?25h[?25l[7m              '[m[7m[31musite/models[m[7m' [m[7m[33m.[m[7m PATH_SEPARATOR [m[7m[33m.[m[7m  
+   [m[48;131H8,1-4         All[8;4H[?12l[?25h[?25l[7m              '[m[7m[31musite/controllers[m[7m' [m[7m[33m.[m[7m PATH_SEPARATOR [m[7m[33m.[m[7m PATH_SEPARATOR [m[7m[33m.[m[7m  [m[48;131H9,1           All[9;1H[?12l[?25h[?25l[7m                 [m[7m[36mget_include_path[m[7m[35m())[m[7m;[m[48;131H9,38          All[9;38H[?12l[?25h[?25l[5;1H[36mset_include_path[m[35m([m'[31mlibrary[m' [33m.[m PATH_SEPARATOR [33m.[m [5;47H[K[6;1H                 '[31mconfig[m' [33m.[m PATH_SEPARATOR [33m.[m [6;46H[K[7;1H                 '[31musite/models[m' [33m.[m PATH_SEPARATOR [33m.[m [7;52H[K[8;1H                 '[31musite/controllers[m' [33m.[m PATH_SEPARATOR [33m.[m PATH_SEPARATOR [33m.[m [8;74H[K[9;1H                 [36mget_include_path[m[35m())[m;[48;1H[K[48;131H5,1           All6 lines yanked[48;131H[K[48;131H5,1           All[5;1H[?12l[?25h[48;131H[K[?25l[1;1H[K[2;1H[1m[34m~                                                                                                                                                   [3;1H~                                                                                                                                                   [4;1H~                                                                                                                                                   [5;1H~                                                                                                                                                   [6;1H~                                                                                                                                                   [7;1H~                                                                                                                                                   [8;1H~                                                                                                                                                   [9;1H~                                                                                                                                                   [10;1H~                                                                                                                                                   [11;1H~                                                                                                                                                   [12;1H~                                                                                                                                                   [13;1H~                                                                                                                                                   [14;1H~                                                                                                                                                   [15;1H~                                                                                                                                                   [16;1H~                                                                                                                                                   [17;1H~                                                                                                                                                   [18;1H~                                                                                                                                                   [19;1H~                                                                                                                                                   [20;1H~                                                                                                                                                   [21;1H~                                                                                                                                                   [22;1H~                                                                                                                                                   [23;1H~                                                                                                                                                   [m[24;1H[1m[7m[No Name]                                                                                                                         0,0-1          All[m[25;1H[34m * Definición de directorios[m[25;29H[K[26;1H[34m */[m[26;5H[K[27;1H[36mset_include_path[m[35m([m'[31mlibrary[m' [33m.[m PATH_SEPARATOR [33m.[m
+                 '[31mconfig[m' [33m.[m PATH_SEPARATOR [33m.[m
+                 '[31musite/models[m' [33m.[m PATH_SEPARATOR [33m.[m
+                 '[31musite/controllers[m' [33m.[m PATH_SEPARATOR [33m.[m PATH_SEPARATOR [33m.[m
+          [7C[36mget_include_path[m[35m())[m;
+[34m/**[m[32;9H[K[33;1H[34m * Carga de clases que sean necesarias
+ */[m[34;4H[K[35;1H[35minclude[m "[31mZend/Loader.[m[30m[43mphp[m";
+Zend_Loader[33m::[mregisterAutoload[35m()[m;
+[34m/**[m[37;4H[K[38;1H[34m * Configuración inicial[m[38;25H[K[39;1H[34m */[m[39;4H[K[40;1H[36merror_reporting[m[35m([m[31mE_ALL[m [33m|[m [31mE_STRICT[m[35m)[m;[40;35H[K[41;1Hdate_default_timezone_set[35m([m'[31mAmerica/Buenos_Aires[m'[35m)[m;[41;51H[K[42;1H[34m/**[m[42;4H[K[43;1H[34m * Setup controller[m[43;20H[K[44;1H[34m */[m[44;4H[K[45;1H[33m$[m[36mcontroller[m [33m=[m Zend_Controller_Front[33m::[mgetInstance[35m()[m;[45;52H[K[46;1H[33m$[m[36mcontroller[m[32m->[msetControllerDirectory[35m([m [32marray[m[35m([m[46;44H[K[47;1H[7m/var/www/titulosregionales.com/index.php                                                                                          5,1            13%[1;1H[?12l[?25h[?25l[m[48;1H[K[48;1H:[?12l[?25he[?25l:e[?12l[?25h [?25l:e [?12l[?25h/[?25l:e /[?12l[?25hv[?25l:e /v[?12l[?25ha[?25l:e /va[?12l[?25hr[?25l:e /var[?12l[?25h...[?25l:e /var/[48;9H[K[48;9H:e /var/[?12l[?25hw[?25l:e /var/w[?12l[?25h...[?25l:e /var/www/:e /var/www/[?12l[?25hs[?25l:e /var/www/s[?12l[?25ho[?25l:e /var/www/so[?12l[?25h...[?25l:e /var/www/southwebfactory.com/:e /var/www/southwebfactory.com/[?12l[?25hc[?25l:e /var/www/southwebfactory.com/c[?12l[?25ho[?25l:e /var/www/southwebfactory.com/co[?12l[?25hr[?25l:e /var/www/southwebfactory.com/cor[?12l[?25h...[?25l:e /var/www/southwebfactory.com/core/[48;38H[K[48;38H:e /var/www/southwebfactory.com/core/[?12l[?25ha[?25l:e /var/www/southwebfactory.com/core/a[?12l[?25h[?25l:e /var/www/southwebfactory.com/core/[48;38H[K[48;1H:e /var/www/southwebfactory.com/core/[?12l[?25hs[?25l:e /var/www/southwebfactory.com/core/s[?12l[?25hc[?25l:e /var/www/southwebfactory.com/core/sc[?12l[?25h...[?25l:e /var/www/southwebfactory.com/core/scripts/:e /var/www/southwebfactory.com/core/scripts/[?12l[?25hl[?25l:e /var/www/southwebfactory.com/core/scripts/l[?12l[?25ho[?25l:e /var/www/southwebfactory.com/core/scripts/lo[?12l[?25h...[?25l:e /var/www/southwebfactory.com/core/scripts/load.sqlite.php:e /var/www/southwebfactory.com/core/scripts/load.sqlite.php[?12l[?25h[?25l"scripts/load.sqlite.php" [48;27H[K[48;1H"scripts/load.sqlite.php" 72L, 2226C[1;1H[35m<?[m[30m[43mphp[m
+[34m// If any parameter is passed after the script name (like 1 or --withdata)[m[2;75H[K[3;1H[34m// load the data file after the schema has loaded.[m[3;51H[K[4;1H[33m$[m[36mwithData[m [33m=[m [31mfalse[m;[4;19H[K[5;1H[33mif[m [35m([m[33misset[m[35m([m[33m$[m[36m_SERVER[m[35m[[m'[31margv[m'[35m][[m[31m1[m[35m]))[m [35m{[m[5;34H[K[6;1H    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;[6;22H[K[7;1H[35m}[m [33melseif[m [35m([m[36mdefined[m[35m([m'[31mAPPLICATION_LOAD_TESTDATA[m'[35m))[m [35m{[m[7;50H[K[8;1H    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;[8;22H[K[9;1H[35m}[m[9;2H[K[10;1H[K[11;1H[34m// Initialize the application and bootstrap the database adapter[m[11;65H[K[12;1H[36mdefined[m[35m([m'[31mAPPLICATION_PATH[m'[35m)[m[12;28H[K[13;1H    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_PATH[m', [36mrealpath[m[35m([m[36mdirname[m[35m([m[31m__FILE__[m[35m)[m [33m.[m '[31m/../application[m'[35m))[m;[13;84H[K[14;1H[36mdefined[m[35m([m'[31mAPPLICATION_ENV[m'[35m)[m[14;27H[K[15;1H    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_ENV[m', '[31mdevelopment[m'[35m)[m;[15;49H[K[16;1H[35mrequire_once[m '[31mZend/Application.[m[30m[43mphp[m';[16;37H[K[17;1H[33m$[m[36mapplication[m [33m=[m [35mnew[m Zend_Application[35m([m[17;37H[K[18;1H    APPLICATION_ENV,[18;21H[K[19;1H    APPLICATION_PATH [33m.[m '[31m/configs/application.ini[m'[19;50H[K[20;1H[35m)[m;[20;3H[K[21;1H[33m$[m[36mbootstrap[m [33m=[m [33m$[m[36mapplication[m[32m->[mgetBootstrap[35m()[m;[21;43H[K[22;1H[33m$[m[36mbootstrap[m[32m->[mbootstrap[35m([m'[31mdb[m'[35m)[m;[22;29H[K[23;1H[33m$[m[36mdbAdapter[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetResource[35m([m'[31mdb[m'[35m)[m;[23;44H[K[24;1H[1m[7mscripts/load.sqlite.php[107C1,1            Top[1;1H[?12l[?25h[?25l[24;131H2,1            Top[2;1H[?12l[?25h[?25l[24;131H3,1            Top[3;1H[?12l[?25h[?25l[24;131H4,1            Top[4;1H[?12l[?25h[?25l[24;131H5,1            Top[5;1H[?12l[?25h[?25l[24;131H6,1            Top[6;1H[?12l[?25h[?25l[m[5;33H[35m[46m{
+
+}[m[24;131H[1m[7m7,1            Top[7;1H[?12l[?25h[?25l[m[5;33H[35m{
+
+}[m[24;131H[1m[7m8,1            Top[8;1H[?12l[?25h[?25l[m[7;49H[35m[46m{
+
+}[m[24;131H[1m[7m9,1            Top[9;1H[?12l[?25h[?25l[m[7;49H[35m{
+
+}[m[24;131H[1m[7m10,0-1         Top[10;1H[?12l[?25h[?25l[m[48;1H[K[48;1H//// // L// Lo// Loa// Load// Load // Load P// Load Pr// Load Pro// Load Prod// Load Produ// Load Produc// Load Product// Load Products// Load Products // Load Products C// Load Products Co// Load Products Con// Load Products Conf// Load Products Confi// Load Products Config// Load Products Config/php[48;5H[K[48;1H[24;131H[1m[7m16,32          Top[16;32H[?12l[?25h[?25l[m[48;1H[1m-- INSERT --[17;23r[m[17;1H[2L[1;48r[16;32H[31mairngormEventDispatcher.getInstance().dispatchEvent( 
+                new CairngormEvent( LoadConfigEvent.LOAD_CONFIG_EVENT ) 
+                            );
+$application = new Zend_Application(
+    APPLICATION_ENV,
+    APPLICATION_PATH . [m'[33m/[mconfigs[33m/[mapplication[33m.[mini
+[31m);
+$bootstrap = $application->getBootstrap();[m
+[1m[7mscripts/load.sqlite.php [+][103C18,31          Top[m[48;1H[1m-- INSERT --[18;31H[?12l[?25h[?25l[m[31mu[m[24;131H[1m[7m18,32          Top[18;32H[?12l[?25h[m[48;1H[K[18;31H[?25l[24;131H[1m[7m18,31          Top[18;31H[?12l[?25h[?25l[m[48;1H2 fewer lines; before #38  5 seconds ago[16;23r[16;1H[2M[1;48r[16;1H[35mrequire_once[m '[31mZend/Application.[m[30m[43mphp[m';
+[33m$[m[36mapplication[m [33m=[m [35mnew[m Zend_Application[35m([m
+    APPLICATION_ENV,
+    APPLICATION_PATH [33m.[m '[31m/configs/application.ini[m
+[35m)[m;
+[33m$[m[36mbootstrap[m [33m=[m [33m$[m[36mapplication[m[32m->[mgetBootstrap[35m()[m;
+[33m$[m[36mbootstrap[m[32m->[mbootstrap[35m([m'[31mdb[m'[35m)[m;
+[33m$[m[36mdbAdapter[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetResource[35m([m'[31mdb[m'[35m)[m;
+[1m[7mscripts/load.sqlite.php     [102C16,32          Top[m[48;1H[K[16;32H[?12l[?25h[24;1H[7mscripts/load.sqlite.php                                                                                                           [?25l16,32          Top[m[47;1H[1m[7m/var/www/titulosregionales.com/index.php                                                                                          5,1            13%[27;1H[?12l[?25h[?25l[m[48;1H[1m-- VISUAL --[27;1H[?12l[?25h[?25l[m[7m[36mset_include_path[m[7m[35m([m[7m'[m[7m[31mlibrary[m[7m' [m[7m[33m.[m[7m PATH_SEPARATOR [m[7m[33m.[m[7m  
+   [m[47;131H[1m[7m6,1-4          13%[28;4H[?12l[?25h[?25l[m[7m              '[m[7m[31mconfig[m[7m' [m[7m[33m.[m[7m PATH_SEPARATOR [m[7m[33m.[m[7m  
+   [m[47;131H[1m[7m7,1-4          13%[29;4H[?12l[?25h[?25l[m[7m              '[m[7m[31musite/models[m[7m' [m[7m[33m.[m[7m PATH_SEPARATOR [m[7m[33m.[m[7m  
+   [m[47;131H[1m[7m8,1-4          13%[30;4H[?12l[?25h[?25l[m[7m              '[m[7m[31musite/controllers[m[7m' [m[7m[33m.[m[7m PATH_SEPARATOR [m[7m[33m.[m[7m PATH_SEPARATOR [m[7m[33m.[m[7m [m[47;131H[1m[7m8,62-74        13%[30;74H[?12l[?25h[?25l[m[7m 
+                 [m[7m[36mget_include_path[m[7m[35m())[m[7m;[m[47;131H[1m[7m9,38           13%[31;38H[?12l[?25h[?25l[m[27;1H[36mset_include_path[m[35m([m'[31mlibrary[m' [33m.[m PATH_SEPARATOR [33m.[m [27;47H[K[28;1H                 '[31mconfig[m' [33m.[m PATH_SEPARATOR [33m.[m [28;46H[K[29;1H                 '[31musite/models[m' [33m.[m PATH_SEPARATOR [33m.[m [29;52H[K[30;1H                 '[31musite/controllers[m' [33m.[m PATH_SEPARATOR [33m.[m PATH_SEPARATOR [33m.[m [30;74H[K[31;1H                 [36mget_include_path[m[35m())[m;[48;1H[K[48;1H6 lines yanked[47;131H[1m[7m5,1            13%[27;1H[?12l[?25h[24;1Hscripts/load.sqlite.php                                                                                                           [?25l16,32          Top[m[47;1H[7m/var/www/titulosregionales.com/index.php                                                                                          5,1            13%[16;32H[?12l[?25h[?25l[m[24;131H[1m[7m15,32          Top[15;32H[?12l[?25h[?25l[m[14;8H[35m[46m([17C)[m[24;131H[1m[7m14,26          Top[14;26H[?12l[?25h[?25l[m[14;8H[35m([17C)[m[24;131H[1m[7m13,32          Top[13;32H[?12l[?25h[?25l[m[12;8H[35m[46m([18C)[m[24;131H[1m[7m12,27          Top[12;27H[?12l[?25h[?25l[m[12;8H[35m([18C)[m[24;131H[1m[7m11,32          Top[11;32H[?12l[?25h[?25l[24;131H10,0-1         Top[10;1H[?12l[?25h[?25l[m[7;49H[35m[46m{
+
+}[m[24;131H[1m[7m9,1            Top[9;1H[?12l[?25h[?25l[m[7;49H[35m{
+
+}[m[24;131H[1m[7m10,0-1         Top[10;1H[?12l[?25h[?25l[m[48;1H5 more lines[48;13H[K[11;23r[11;1H[5L[1;48r[10;1H[36mset_include_path[m[35m([m'[31mlibrary[m' [33m.[m PATH_SEPARATOR [33m.[m[11;18H'[31mconfig[m' [33m.[m PATH_SEPARATOR [33m.[m[12;18H'[31musite/models[m' [33m.[m PATH_SEPARATOR [33m.[m[13;18H'[31musite/controllers[m' [33m.[m PATH_SEPARATOR [33m.[m PATH_SEPARATOR [33m.[m[14;18H[36mget_include_path[m[35m())[m;[24;1H[1m[7mscripts/load.sqlite.php [+][103C10,1           Top[m[48;1H[K[48;1H5 more lines[24;131H[1m[7m10,1           Top[10;1H[?12l[?25h[?25l[24;131H11,1-4         Top[11;4H[?12l[?25h[?25l[24;131H12,1-4         Top[12;4H[?12l[?25h[?25l[24;131H13,1-4         Top[13;4H[?12l[?25h[?25l[24;131H12,1-4         Top[12;4H[?12l[?25h[?25l[24;131H11,1-4         Top[11;4H[?12l[?25h[?25l[m[7m   [m[48;1H[1m-- VISUAL --[11;4H[?12l[?25h[?25l[m[7m              '[m[7m[31mconfig[m[7m' [m[7m[33m.[m[7m PATH_SEPARATOR [m[7m[33m.[m[7m  
+   [m[24;131H[1m[7m12,1-4         Top[12;4H[?12l[?25h[?25l[m[7m              '[m[7m[31musite/models[m[7m' [m[7m[33m.[m[7m PATH_SEPARATOR [m[7m[33m.[m[7m  
+   [m[24;131H[1m[7m13,1-4         Top[13;4H[?12l[?25h[?25l[m[7m              '[m[7m[31musite/controllers[m[7m' [m[7m[33m.[m[7m PATH_SEPARATOR [m[7m[33m.[m[7m PATH_SEPARATOR [m[7m[33m.[m[7m [m[24;131H[1m[7m13,62-74       Top[13;74H[?12l[?25h[?25l[m [24;131H[1m[7m13,61-73       Top[13;73H[?12l[?25h[?25l[m[33m.[m[24;131H[1m[7m13,60-72       Top[13;72H[?12l[?25h[?25l[11;23r[m[11;1H[2M[1;48r[11;1H [11;2H[K[22;5HAPPLICATION_PATH [33m.[m '[31m/configs/application.ini[m'
+[35m)[m;[48;1H[K[24;131H[1m[7m11,1           Top[11;1H[?12l[?25h[?25l[24;131H11,0-1         Top[11;1H[?12l[?25h[?25l[11;23r[m[23;1H
+[1;48r[23;1H[33m$[m[36mbootstrap[m [33m=[m [33m$[m[36mapplication[m[32m->[mgetBootstrap[35m()[m;[24;131H[1m[7m11,18          Top[11;18H[?12l[?25h[?25l[48;1H[m:[?12l[?25hx[?25l:x[?12l[?25h[?25l:[48;2H[K[48;1H:[?12l[?25hw[?25l:w[?12l[?25h[?25l"scripts/load.sqlite.php" "scripts/load.sqlite.php" 74L, 2311C written[24;1H[1m[7mscripts/load.sqlite.php     [102C11,18          Top[m[48;1H"scripts/load.sqlite.php" 74L, 2311C written[24;131H[1m[7m11,18          Top[11;18H[?12l[?25h[?25l[24;131H10,18          Top[10;18H[?12l[?25h[?25l[m[7;49H[35m[46m{
+
+}[m[24;131H[1m[7m9,1            Top[9;1H[?12l[?25h[?25l[m[7;49H[35m{
+
+}[m[24;131H[1m[7m10,18          Top[10;18H[?12l[?25h[?25l[m[48;1H[1m-- INSERT --[m[48;13H[K[10;18H[?12l[?25h[?25l[24;131H[1m[7m10,19          Top[10;19H[?12l[?25h[?25l[m[31m/library[m' [33m.[m PATH_SEPARATOR [33m.[m[24;1H[1m[7mscripts/load.sqlite.php [+][103C10,20          Top[10;20H[?12l[?25h[?25l[m[31m/library[m' [33m.[m PATH_SEPARATOR [33m.[m[24;131H[1m[7m10,21          Top[10;21H[?12l[?25h[?25l[m[31mlibrary[m' [33m.[m PATH_SEPARATOR [33m.[m [24;131H[1m[7m10,20          Top[10;20H[?12l[?25h[?25l[m[31mlibrary[m' [33m.[m PATH_SEPARATOR [33m.[m [24;131H[1m[7m10,19          Top[10;19H[?12l[?25h[?25l[m[31m.library[m' [33m.[m PATH_SEPARATOR [33m.[m[24;131H[1m[7m10,20          Top[10;20H[?12l[?25h[?25l[m[31m.library[m' [33m.[m PATH_SEPARATOR [33m.[m[24;131H[1m[7m10,21          Top[10;21H[?12l[?25h[?25l[m[31m/library[m' [33m.[m PATH_SEPARATOR [33m.[m[24;131H[1m[7m10,22          Top[10;22H[?12l[?25h[m[48;1H[K[10;21H[?25l[24;131H[1m[7m10,21          Top[10;21H[?12l[?25h[?25l[48;1H[m:[?12l[?25hx[?25l:x[?12l[?25h[?25l"scripts/load.sqlite.php" "scripts/load.sqlite.php" 74L, 2314C written[2;2H[34m**[m[2;4H[K[3;1H[34m * Definición de directorios[m[3;29H[K[4;1H[34m */[m[4;4H[K[5;1H[36mset_include_path[m[35m([m'[31mlibrary[m' [33m.[m PATH_SEPARATOR [33m.[m
+                 '[31mconfig[m' [33m.[m PATH_SEPARATOR [33m.[m
+                 '[31musite/models[m' [33m.[m PATH_SEPARATOR [33m.[m
+                 '[1C[31msite/controllers[m' [33m.[m PATH_SEPARATOR [33m.[m PATH_SEPARATOR [33m.[m
+ [16C[36mget_include_path[m[35m())[m;
+[34m/**[m[10;4H[K[11;1H[34m * Carga de clases que sean necesarias
+ */[m
+[35minclude[m "[31mZend/Loader.[m[30m[43mphp[m";[13;27H[K[14;1HZend_Loader[33m::[mregisterAutoload[35m()[m;
+[34m/**[m[15;5H[K[16;1H[34m * Configuración inicial[m[16;25H[K[17;1H[34m */[m[17;5H[K[18;1H[36merror_reporting[m[35m([m[31mE_ALL[m [33m|[m [31mE_STRICT[m[35m)[m;[18;35H[K[19;1Hdate_default_timezone_set[35m([m'[31mAmerica/Buenos_Aires[m'[35m)[m;
+[34m/**[m[20;5H[K[21;1H[34m * Setup controller[m[21;20H[K[22;1H[34m */[m[23;2H[36mcontroller[m [33m=[m Zend_Controller_Front[33m::[mgetInstance[35m()[m;
+[33m$[m[36mcontroller[m[32m->[msetControllerDirectory[35m([m [32marray[m[35m([m[24;44H[K[25;1H    '[31mdefault[m' [33m=>[m '[31m./usite/controllers[m',
+    '[31madmin[m' [33m=>[m '[31m./admin/controllers[m'[35m)[m [35m)[m;
+[33m$[m[36mcontroller[m[32m->[mthrowExceptions[35m([m [31mtrue[m [35m)[m;[27;38H[K[28;1H[33m$[m[36mrouter[m [33m=[m [33m$[m[36mcontroller[m[32m->[mgetRouter[35m()[m;[28;36H[K[29;1H[33m$[m[36mroute[m [33m=[m [35mnew[m Zend_Controller_Router_Route_Regex[35m([m[29;50H[K[30;5H'[31m^sitemap.xml$[m',[30;21H[K[31;5H[32marray[m[35m([m[31;18H[K[32;1H        '[31mcontroller[m' [33m=>[m '[31msitemaps[m',
+        '[31maction[m'     [33m=>[m '[31mindex[m'   [35m))[m;[33;38H[K[34;1H[33m$[m[36mrouter[m[32m->[maddRoute[35m([m'[31msitemap[m', [33m$[m[36mroute[m[35m)[m;[35;1H[K[36;1H[34m// DISPATCH![m[36;13H[K[37;1H[33m$[m[36mcontroller[m[32m->[mdispatch[35m()[m;
+[1m[34m~                                                                                                                                                   [39;1H~                                                                                                                                                   [40;1H~                                                                                                                                                   [41;1H~                                                                                                                                                   [42;1H~                                                                                                                                                   [43;1H~                                                                                                                                                   [44;1H~                                                                                                                                                   [45;1H~                                                                                                                                                   [46;1H~                                                                                                                                                   [47;1H~                                                                                                                                                   [m[48;131H5,1           All"scripts/load.sqlite.php" 74L, 2314C written[48;131H[K[48;131H5,1           All[5;1H[?12l[?25h[?25l[48;1H[K[48;1H:[?12l[?25hx[?25l:x[?12l[?25h[?25l[48;1H[K[48;1H[?1l>[?12l[?25h[?1049l]0;root@host:/var/www/southwebfactory.com/core[root@host core]# vim scripts/load.sqlite.php 
+[?1049h[?1h=[1;48r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[48;1H"scripts/load.sqlite.php" "scripts/load.sqlite.php" 74L, 2314C[>c[1;1H[35m<?[m[30m[43mphp[m
+[34m// If any parameter is passed after the script name (like 1 or --withdata)
+// load the data file after the schema has loaded.[m
+[33m$[m[36mwithData[m [33m=[m [31mfalse[m;
+[33mif[m [35m([m[33misset[m[35m([m[33m$[m[36m_SERVER[m[35m[[m'[31margv[m'[35m][[m[31m1[m[35m]))[m [35m{[m
+    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;
+[35m}[m [33melseif[m [35m([m[36mdefined[m[35m([m'[31mAPPLICATION_LOAD_TESTDATA[m'[35m))[m [35m{[m
+    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;
+[35m}[m
+[36mset_include_path[m[35m([m'[31m../library[m' [33m.[m PATH_SEPARATOR [33m.[m[11;18H[36mget_include_path[m[35m())[m;
+
+[34m// Initialize the application and bootstrap the database adapter[m
+[36mdefined[m[35m([m'[31mAPPLICATION_PATH[m'[35m)[m
+    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_PATH[m', [36mrealpath[m[35m([m[36mdirname[m[35m([m[31m__FILE__[m[35m)[m [33m.[m '[31m/../application[m'[35m))[m;
+[36mdefined[m[35m([m'[31mAPPLICATION_ENV[m'[35m)[m
+    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_ENV[m', '[31mdevelopment[m'[35m)[m;
+[35mrequire_once[m '[31mZend/Application.[m[30m[43mphp[m';
+[33m$[m[36mapplication[m [33m=[m [35mnew[m Zend_Application[35m([m
+    APPLICATION_ENV,
+    APPLICATION_PATH [33m.[m '[31m/configs/application.ini[m'
+[35m)[m;
+[33m$[m[36mbootstrap[m [33m=[m [33m$[m[36mapplication[m[32m->[mgetBootstrap[35m()[m;
+[33m$[m[36mbootstrap[m[32m->[mbootstrap[35m([m'[31mdb[m'[35m)[m;
+[33m$[m[36mdbAdapter[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetResource[35m([m'[31mdb[m'[35m)[m;
+
+[34m// let the user know whats going on (we are actually creating a 
+// database here)[m
+[33mif[m [35m([m'[31mtesting[m' [33m!=[m APPLICATION_ENV[35m)[m [35m{
+[m    [35mecho[m '[31mWriting Database Guestbook in (control-c to cancel): [m' [33m.[m PHP_EOL;
+    [33mfor[m [35m([m[33m$[m[36mx[m [33m=[m [31m5[m; [33m$[m[36mx[m [33m>[m [31m0[m; [33m$[m[36mx[m[33m--[m[35m)[m [35m{[32;9Hecho[m [33m$[m[36mx[m [33m.[m "[35m\r[m"; [36msleep[m[35m([m[31m1[m[35m)[m;
+    [35m}
+}[m
+
+[34m// Check to see if we have a database file already[m
+[33m$[m[36moptions[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetOption[35m([m'[31mresources[m'[35m)[m;
+[33m$[m[36mdbFile[m  [33m=[m [33m$[m[36moptions[m[35m[[m'[31mdb[m'[35m][[m'[31mparams[m'[35m][[m'[31mdbname[m'[35m][m;
+[33mif[m [35m([m[36mfile_exists[m[35m([m[33m$[m[36mdbFile[m[35m))[m [35m{[m
+    [36munlink[m[35m([m[33m$[m[36mdbFile[m[35m)[m;
+[35m}[m
+
+[34m// this block executes the actual statements that were loaded from 
+// the schema file.[m
+[33mtry[m [35m{[m
+    [33m$[m[36mschemaSql[m [33m=[m [36mfile_get_contents[m[35m([m[36mdirname[m[35m([m[31m__FILE__[m[35m)[m [33m.[m '[31m/schema.sqlite.sql[m'[35m)[m;
+    [34m// use the connection directly to load sql in batches[m[48;131H10,1          Top[10;1H[?12l[?25h[?25l[48;1H[K[48;1H:[?12l[?25hq[?25l:q[?12l[?25h[?25l[48;1H[K[48;1H[?1l>[?12l[?25h[?1049l]0;root@host:/var/www/southwebfactory.com/core[root@host core]# vim scripts/load.sqlite.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cphp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+PHP Warning:  require_once(Zend/Application.php): failed to open stream: No such file or directory in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 18
+
+Warning: require_once(Zend/Application.php): failed to open stream: No such file or directory in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 18
+PHP Fatal error:  require_once(): Failed opening required 'Zend/Application.php' (include_path='../library:.:/usr/local/httpd/php/lib/php') in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 18
+
+Fatal error: require_once(): Failed opening required 'Zend/Application.php' (include_path='../library:.:/usr/local/httpd/php/lib/php') in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 18
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# php scripts/load.sqlite.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvim[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[?1h=[1;48r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[48;1H"scripts/load.sqlite.php" "scripts/load.sqlite.php" 74L, 2314C[>c[1;1H[35m<?[m[30m[43mphp[m
+[34m// If any parameter is passed after the script name (like 1 or --withdata)
+// load the data file after the schema has loaded.[m
+[33m$[m[36mwithData[m [33m=[m [31mfalse[m;
+[33mif[m [35m([m[33misset[m[35m([m[33m$[m[36m_SERVER[m[35m[[m'[31margv[m'[35m][[m[31m1[m[35m]))[m [35m{[m
+    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;
+[35m}[m [33melseif[m [35m([m[36mdefined[m[35m([m'[31mAPPLICATION_LOAD_TESTDATA[m'[35m))[m [35m{[m
+    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;
+[35m}[m
+[36mset_include_path[m[35m([m'[31m../library[m' [33m.[m PATH_SEPARATOR [33m.[m[11;18H[36mget_include_path[m[35m())[m;
+
+[34m// Initialize the application and bootstrap the database adapter[m
+[36mdefined[m[35m([m'[31mAPPLICATION_PATH[m'[35m)[m
+    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_PATH[m', [36mrealpath[m[35m([m[36mdirname[m[35m([m[31m__FILE__[m[35m)[m [33m.[m '[31m/../application[m'[35m))[m;
+[36mdefined[m[35m([m'[31mAPPLICATION_ENV[m'[35m)[m
+    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_ENV[m', '[31mdevelopment[m'[35m)[m;
+[35mrequire_once[m '[31mZend/Application.[m[30m[43mphp[m';
+[33m$[m[36mapplication[m [33m=[m [35mnew[m Zend_Application[35m([m
+    APPLICATION_ENV,
+    APPLICATION_PATH [33m.[m '[31m/configs/application.ini[m'
+[35m)[m;
+[33m$[m[36mbootstrap[m [33m=[m [33m$[m[36mapplication[m[32m->[mgetBootstrap[35m()[m;
+[33m$[m[36mbootstrap[m[32m->[mbootstrap[35m([m'[31mdb[m'[35m)[m;
+[33m$[m[36mdbAdapter[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetResource[35m([m'[31mdb[m'[35m)[m;
+
+[34m// let the user know whats going on (we are actually creating a 
+// database here)[m
+[33mif[m [35m([m'[31mtesting[m' [33m!=[m APPLICATION_ENV[35m)[m [35m{
+[m    [35mecho[m '[31mWriting Database Guestbook in (control-c to cancel): [m' [33m.[m PHP_EOL;
+    [33mfor[m [35m([m[33m$[m[36mx[m [33m=[m [31m5[m; [33m$[m[36mx[m [33m>[m [31m0[m; [33m$[m[36mx[m[33m--[m[35m)[m [35m{[32;9Hecho[m [33m$[m[36mx[m [33m.[m "[35m\r[m"; [36msleep[m[35m([m[31m1[m[35m)[m;
+    [35m}
+}[m
+
+[34m// Check to see if we have a database file already[m
+[33m$[m[36moptions[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetOption[35m([m'[31mresources[m'[35m)[m;
+[33m$[m[36mdbFile[m  [33m=[m [33m$[m[36moptions[m[35m[[m'[31mdb[m'[35m][[m'[31mparams[m'[35m][[m'[31mdbname[m'[35m][m;
+[33mif[m [35m([m[36mfile_exists[m[35m([m[33m$[m[36mdbFile[m[35m))[m [35m{[m
+    [36munlink[m[35m([m[33m$[m[36mdbFile[m[35m)[m;
+[35m}[m
+
+[34m// this block executes the actual statements that were loaded from 
+// the schema file.[m
+[33mtry[m [35m{[m
+    [33m$[m[36mschemaSql[m [33m=[m [36mfile_get_contents[m[35m([m[36mdirname[m[35m([m[31m__FILE__[m[35m)[m [33m.[m '[31m/schema.sqlite.sql[m'[35m)[m;
+    [34m// use the connection directly to load sql in batches[m[48;131H10,1          Top[10;1H[?12l[?25h[?25l[48;131H11,1          Top[11;1H[?12l[?25h[?25l[48;131H12,0-1        Top[12;1H[?12l[?25h[?25l[48;131H11,1          Top[11;1H[?12l[?25h[?25l[48;131H10,1          Top[10;1H[?12l[?25h[?25l[48;1H[1m-- INSERT --[m[48;13H[K[48;131H10,1          Top[10;1H[?12l[?25h[?25l[48;131H10,50         Top[10;50H[?12l[?25h[?25l[10;47r[47;1H
+[1;48r[10;1H[36mset_include_path[m[35m([m'[31m../library[m' [33m.[m PATH_SEPARATOR [33m.[m[18C[36mget_include_path[m[35m())[m;[47;5H[33m$[m[36mdbAdapter[m[32m->[mgetConnection[35m()[m[32m->[mexec[35m([m[33m$[m[36mschemaSql[m[35m)[m;
+[1m-- INSERT --[m[48;131H[K[48;131H10,50         Top[10;50H[?12l[?25h[?25l[16C[36mget_include_path[m[35m()[m[1C;[10;86H[K[10;50H[?12l[?25h[?25l[15C[36mget_include_path[m[35m()[m[1C;[10;85H[K[10;50H[?12l[?25h[?25l[14C[36mget_include_path[m[35m()[m[1C;[10;84H[K[10;50H[?12l[?25h[?25l[13C[36mget_include_path[m[35m()[m[1C;[10;83H[K[10;50H[?12l[?25h[?25l[12C[36mget_include_path[m[35m()[m[1C;[10;82H[K[10;50H[?12l[?25h[?25l[11C[36mget_include_path[m[35m()[m[1C;[10;81H[K[10;50H[?12l[?25h[?25l[10C[36mget_include_path[m[35m()[m[1C;[10;80H[K[10;50H[?12l[?25h[?25l[8C[36mget_include_path[m[35m())[m;[10;78H[K[10;50H[?12l[?25h[?25l[7C[36mget_include_path[m[35m()[m[1C;[10;77H[K[10;50H[?12l[?25h[?25l      [36mget_include_path[m[35m()[m[1C;[10;76H[K[10;50H[?12l[?25h[?25l     [36mget_include_path[m[35m()[m[1C;[10;75H[K[10;50H[?12l[?25h[?25l    [36mget_include_path[m[35m()[m[1C;[10;74H[K[10;50H[?12l[?25h[?25l   [36mget_include_path[m[35m()[m[1C;[10;73H[K[10;50H[?12l[?25h[?25l  [36mget_include_path[m[35m()[m[1C;[10;72H[K[10;50H[?12l[?25h[?25l [36mget_include_path[m[35m()[m[1C;[10;71H[K[10;50H[?12l[?25h[?25l[36mget_include_path[m[35m()[m[1C;[10;70H[K[10;50H[?12l[?25h[?25l[48;131H10,70         Top[10;70H[?12l[?25h[?25l[48;131H10,1          Top[10;1H[?12l[?25h[?25l[48;131H10,2          Top[10;2H[?12l[?25h[?25l[48;131H10,3          Top[10;3H[?12l[?25h[?25l[48;131H10,4          Top[10;4H[?12l[?25h[?25l[48;131H10,5          Top[10;5H[?12l[?25h[?25l[48;131H10,7          Top[10;7H[?12l[?25h[?25l[48;131H10,8          Top[10;8H[?12l[?25h[?25l[48;131H10,9          Top[10;9H[?12l[?25h[?25l[48;131H10,10         Top[10;10H[?12l[?25h[?25l[48;131H10,11         Top[10;11H[?12l[?25h[?25l[48;131H10,12         Top[10;12H[?12l[?25h[?25l[48;131H10,13         Top[10;13H[?12l[?25h[?25l[48;131H10,14         Top[10;14H[?12l[?25h[?25l[48;131H10,15         Top[10;15H[?12l[?25h[?25l[48;131H10,16         Top[10;16H[?12l[?25h[?25l[1C[35m[46m([50C)[m[48;131H10,17         Top[10;17H[?12l[?25h[?25l[48;131H10,18         Top[10;18H[?12l[?25h[?25l[35m([50C)[m[48;131H10,19         Top[10;19H[?12l[?25h[?25l[48;131H10,20         Top[10;20H[?12l[?25h[?25l[48;131H10,21         Top[10;21H[?12l[?25h[?25l[48;131H10,22         Top[10;22H[?12l[?25h[?25l[48;131H10,23         Top[10;23H[?12l[?25h[?25l[48;131H10,24         Top[10;24H[?12l[?25h[?25l[48;131H10,25         Top[10;25H[?12l[?25h[?25l[48;131H10,26         Top[10;26H[?12l[?25h[?25l[48;131H10,27         Top[10;27H[?12l[?25h[?25l[48;131H10,28         Top[10;28H[?12l[?25h[?25l[48;131H10,29         Top[10;29H[?12l[?25h[?25l[48;131H10,30         Top[10;30H[?12l[?25h[?25l[48;131H10,29         Top[10;29H[?12l[?25h[?25l[31m/[m' [33m.[m PATH_SEPARATOR [33m.[m [36mget_include_path[m[35m())[m;[48;131H10,30         Top[10;30H[?12l[?25h[?25l[48;131H10,29         Top[10;29H[?12l[?25h[?25l[48;131H10,28         Top[10;28H[?12l[?25h[?25l[48;131H10,27         Top[10;27H[?12l[?25h[?25l[48;131H10,26         Top[10;26H[?12l[?25h[?25l[48;131H10,24         Top[10;24H[?12l[?25h[?25l[48;131H10,23         Top[10;23H[?12l[?25h[?25l[48;131H10,22         Top[10;22H[?12l[?25h[?25l[48;131H10,21         Top[10;21H[?12l[?25h[?25l[48;131H10,20         Top[10;20H[?12l[?25h[?25l[48;131H10,19         Top[10;19H[?12l[?25h[?25l[35m[46m([51C)[m[48;131H10,18         Top[10;18H[?12l[?25h[?25l[48;131H10,17         Top[10;17H[?12l[?25h[?25l[48;131H10,18         Top[10;18H[?12l[?25h[?25l[35m([51C)[m[48;131H10,19         Top[10;19H[?12l[?25h[?25l[2C[31m./library/[m' [33m.[m PATH_SEPARATOR [33m.[m [36mget_include_path[m[35m())[m;[48;131H10,20         Top[10;20H[?12l[?25h[?25l[2C[31m./library/[m' [33m.[m PATH_SEPARATOR [33m.[m [36mget_include_path[m[35m())[m;[48;131H10,21         Top[10;21H[?12l[?25h[?25l[31m/../library/[m' [33m.[m PATH_SEPARATOR [33m.[m [36mget_include_path[m[35m())[m;[48;131H10,22         Top[10;22H[?12l[?25h[48;1H[K[10;21H[?25l[48;131H10,21         Top[10;21H[?12l[?25h[?25l[48;131H[K[48;1H:[?12l[?25hx[?25l:x[?12l[?25h[?25l"scripts/load.sqlite.php" "scripts/load.sqlite.php" 73L, 2300C written
+[?1l>[?12l[?25h[?1049l]0;root@host:/var/www/southwebfactory.com/core[root@host core]# vim scripts/load.sqlite.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cphp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+PHP Warning:  require_once(Zend/Application.php): failed to open stream: No such file or directory in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 17
+
+Warning: require_once(Zend/Application.php): failed to open stream: No such file or directory in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 17
+PHP Fatal error:  require_once(): Failed opening required 'Zend/Application.php' (include_path='../../library/:.:/usr/local/httpd/php/lib/php') in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 17
+
+Fatal error: require_once(): Failed opening required 'Zend/Application.php' (include_path='../../library/:.:/usr/local/httpd/php/lib/php') in /var/www/southwebfactory.com/core/scripts/load.sqlite.php on line 17
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# php scripts/load.sqlite.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvim[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[?1h=[1;48r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[48;1H"scripts/load.sqlite.php" "scripts/load.sqlite.php" 73L, 2300C[>c[1;1H[35m<?[m[30m[43mphp[m
+[34m// If any parameter is passed after the script name (like 1 or --withdata)
+// load the data file after the schema has loaded.[m
+[33m$[m[36mwithData[m [33m=[m [31mfalse[m;
+[33mif[m [35m([m[33misset[m[35m([m[33m$[m[36m_SERVER[m[35m[[m'[31margv[m'[35m][[m[31m1[m[35m]))[m [35m{[m
+    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;
+[35m}[m [33melseif[m [35m([m[36mdefined[m[35m([m'[31mAPPLICATION_LOAD_TESTDATA[m'[35m))[m [35m{[m
+    [33m$[m[36mwithData[m [33m=[m [31mtrue[m;
+[35m}[m
+[36mset_include_path[m[35m([m'[31m../../library/[m' [33m.[m PATH_SEPARATOR [33m.[m [36mget_include_path[m[35m())[m;
+
+[34m// Initialize the application and bootstrap the database adapter[m
+[36mdefined[m[35m([m'[31mAPPLICATION_PATH[m'[35m)[m
+    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_PATH[m', [36mrealpath[m[35m([m[36mdirname[m[35m([m[31m__FILE__[m[35m)[m [33m.[m '[31m/../application[m'[35m))[m;
+[36mdefined[m[35m([m'[31mAPPLICATION_ENV[m'[35m)[m
+    [33m||[m [36mdefine[m[35m([m'[31mAPPLICATION_ENV[m', '[31mdevelopment[m'[35m)[m;
+[35mrequire_once[m '[31mZend/Application.[m[30m[43mphp[m';
+[33m$[m[36mapplication[m [33m=[m [35mnew[m Zend_Application[35m([m
+    APPLICATION_ENV,
+    APPLICATION_PATH [33m.[m '[31m/configs/application.ini[m'
+[35m)[m;
+[33m$[m[36mbootstrap[m [33m=[m [33m$[m[36mapplication[m[32m->[mgetBootstrap[35m()[m;
+[33m$[m[36mbootstrap[m[32m->[mbootstrap[35m([m'[31mdb[m'[35m)[m;
+[33m$[m[36mdbAdapter[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetResource[35m([m'[31mdb[m'[35m)[m;
+
+[34m// let the user know whats going on (we are actually creating a 
+// database here)[m
+[33mif[m [35m([m'[31mtesting[m' [33m!=[m APPLICATION_ENV[35m)[m [35m{
+[m    [35mecho[m '[31mWriting Database Guestbook in (control-c to cancel): [m' [33m.[m PHP_EOL;
+    [33mfor[m [35m([m[33m$[m[36mx[m [33m=[m [31m5[m; [33m$[m[36mx[m [33m>[m [31m0[m; [33m$[m[36mx[m[33m--[m[35m)[m [35m{[31;9Hecho[m [33m$[m[36mx[m [33m.[m "[35m\r[m"; [36msleep[m[35m([m[31m1[m[35m)[m;
+    [35m}
+}[m
+
+[34m// Check to see if we have a database file already[m
+[33m$[m[36moptions[m [33m=[m [33m$[m[36mbootstrap[m[32m->[mgetOption[35m([m'[31mresources[m'[35m)[m;
+[33m$[m[36mdbFile[m  [33m=[m [33m$[m[36moptions[m[35m[[m'[31mdb[m'[35m][[m'[31mparams[m'[35m][[m'[31mdbname[m'[35m][m;
+[33mif[m [35m([m[36mfile_exists[m[35m([m[33m$[m[36mdbFile[m[35m))[m [35m{[m
+    [36munlink[m[35m([m[33m$[m[36mdbFile[m[35m)[m;
+[35m}[m
+
+[34m// this block executes the actual statements that were loaded from 
+// the schema file.[m
+[33mtry[m [35m{[m
+    [33m$[m[36mschemaSql[m [33m=[m [36mfile_get_contents[m[35m([m[36mdirname[m[35m([m[31m__FILE__[m[35m)[m [33m.[m '[31m/schema.sqlite.sql[m'[35m)[m;
+    [34m// use the connection directly to load sql in batches[m
+    [33m$[m[36mdbAdapter[m[32m->[mgetConnection[35m()[m[32m->[mexec[35m([m[33m$[m[36mschemaSql[m[35m)[m;[48;131H10,1          Top[10;1H[?12l[?25h[?25l[48;131H11,0-1        Top[11;1H[?12l[?25h[?25l[48;131H12,1          Top[12;1H[?12l[?25h[?25l[48;131H13,1          Top[13;1H[?12l[?25h[?25l[48;131H14,1          Top[14;1H[?12l[?25h[?25l[48;131H15,1          Top[15;1H[?12l[?25h[?25l[48;131H16,1          Top[16;1H[?12l[?25h[?25l[48;131H17,1          Top[17;1H[?12l[?25h[?25l[48;131H18,1          Top[18;1H[?12l[?25h[?25l[48;131H18,2          Top[18;2H[?12l[?25h[?25l[48;131H18,3          Top[18;3H[?12l[?25h[?25l[48;131H18,4          Top[18;4H[?12l[?25h[?25l[48;131H18,5          Top[18;5H[?12l[?25h[?25l[48;131H18,6          Top[18;6H[?12l[?25h[?25l[48;131H18,7          Top[18;7H[?12l[?25h[?25l[48;131H18,8          Top[18;8H[?12l[?25h[?25l[48;131H18,9          Top[18;9H[?12l[?25h[?25l[48;131H18,10         Top[18;10H[?12l[?25h[?25l[48;131H18,11         Top[18;11H[?12l[?25h[?25l[48;131H18,12         Top[18;12H[?12l[?25h[?25l[48;131H18,13         Top[18;13H[?12l[?25h[?25l[48;131H18,14         Top[18;14H[?12l[?25h[?25l[48;131H18,15         Top[18;15H[?12l[?25h[?25l[48;131H18,16         Top[18;16H[?12l[?25h[?25l[48;131H18,17         Top[18;17H[?12l[?25h[?25l[48;131H18,18         Top[18;18H[?12l[?25h[?25l[48;131H17,18         Top[17;18H[?12l[?25h[?25l[48;131H16,18         Top[16;18H[?12l[?25h[?25l[48;131H15,18         Top[15;18H[?12l[?25h[?25l[48;131H14,18         Top[14;18H[?12l[?25h[?25l[48;131H13,18         Top[13;18H[?12l[?25h[?25l[48;131H12,18         Top[12;18H[?12l[?25h[?25l[48;131H11,0-1        Top[11;1H[?12l[?25h[?25l[48;131H10,18         Top[10;18H[?12l[?25h[?25l[7;49H[35m[46m{
+
+}[m[48;131H9,1           Top[9;1H[?12l[?25h[?25l[7;49H[35m{
+
+}[m[48;131H10,18         Top[10;18H[?12l[?25h[?25l[48;131H10,19         Top[10;19H[?12l[?25h[?25l[1C[31m/../library/[m' [33m.[m PATH_SEPARATOR [33m.[m [36mget_include_path[m[35m()[m[1C;[10;73H[K[10;19H[?12l[?25h[?25l[31m/../library/[m' [33m.[m PATH_SEPARATOR [33m.[m [36mget_include_path[m[35m()[m[1C;[10;72H[K[10;19H[?12l[?25h[?25l[31m../library/[m' [33m.[m PATH_SEPARATOR [33m.[m [36mget_include_path[m[35m()[m[1C;[10;71H[K[10;19H[?12l[?25h[?25l[1C[31m/library/[m' [33m.[m PATH_SEPARATOR [33m.[m [36mget_include_path[m[35m()[m[1C;[10;70H[K[10;19H[?12l[?25h[?25l[31m/library/[m' [33m.[m PATH_SEPARATOR [33m.[m [36mget_include_path[m[35m()[m[1C;[10;69H[K[10;19H[?12l[?25h[?25l[31mlibrary/[m' [33m.[m PATH_SEPARATOR [33m.[m [36mget_include_path[m[35m()[m[1C;[10;68H[K[10;19H[?12l[?25h[?25l[48;1H[K[48;1H:[?12l[?25hx[?25l:x[?12l[?25h[?25l"scripts/load.sqlite.php" "scripts/load.sqlite.php" 73L, 2294C written
+[?1l>[?12l[?25h[?1049l]0;root@host:/var/www/southwebfactory.com/core[root@host core]# vim scripts/load.sqlite.php [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cphp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Writing Database Guestbook in (control-c to cancel): 
+54321
+Database Created
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# ls
+[00m[00;34mapplication[00m  [00;34mdata[00m  [00;34mlibrary[00m  [00;34mpublic[00m  [00;34mscripts[00m  [00;34mtests[00m
+[m]0;root@host:/var/www/southwebfactory.com/core[root@host core]# ls
+[00m[00;34mapplication[00m  [00;34mdata[00m  [00;34mlibrary[00m  [00;34mpublic[00m  [00;34mscripts[00m  [00;34mtests[00m
+[m]0;root@host:/var/www/southwebfactory.com/core[root@host core]# svn st
+svn: warning: '.' is not a working copy
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# ,ld[K[K[Kmkdir -p application/models/DbTable
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# vim !3[K$/va[K[KGuestbook.php
+vim application/models/DbTable/Guestbook.php
+[?1049h[?1h=[1;48r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[48;1H"application/models/DbTable/Guestbook.php" [New File][>c[2;1H[1m[34m~                                                                                                                                                   [3;1H~                                                                                                                                                   [4;1H~                                                                                                                                                   [5;1H~                                                                                                                                                   [6;1H~                                                                                                                                                   [7;1H~                                                                                                                                                   [8;1H~                                                                                                                                                   [9;1H~                                                                                                                                                   [10;1H~                                                                                                                                                   [11;1H~                                                                                                                                                   [12;1H~                                                                                                                                                   [13;1H~                                                                                                                                                   [14;1H~                                                                                                                                                   [15;1H~                                                                                                                                                   [16;1H~                                                                                                                                                   [17;1H~                                                                                                                                                   [18;1H~                                                                                                                                                   [19;1H~                                                                                                                                                   [20;1H~                                                                                                                                                   [21;1H~                                                                                                                                                   [22;1H~                                                                                                                                                   [23;1H~                                                                                                                                                   [24;1H~                                                                                                                                                   [25;1H~                                                                                                                                                   [26;1H~                                                                                                                                                   [27;1H~                                                                                                                                                   [28;1H~                                                                                                                                                   [29;1H~                                                                                                                                                   [30;1H~                                                                                                                                                   [31;1H~                                                                                                                                                   [32;1H~                                                                                                                                                   [33;1H~                                                                                                                                                   [34;1H~                                                                                                                                                   [35;1H~                                                                                                                                                   [36;1H~                                                                                                                                                   [37;1H~                                                                                                                                                   [38;1H~                                                                                                                                                   [39;1H~                                                                                                                                                   [40;1H~                                                                                                                                                   [41;1H~                                                                                                                                                   [42;1H~                                                                                                                                                   [43;1H~                                                                                                                                                   [44;1H~                                                                                                                                                   [45;1H~                                                                                                                                                   [46;1H~                                                                                                                                                   [47;1H~                                                                                                                                                   [m[48;131H0,0-1         All[1;1H[?12l[?25h[?25l[48;1H[K[48;1H:[?12l[?25hs[?25l:s[?12l[?25he[?25l:se[?12l[?25h [?25l:se [?12l[?25hp[?25l:se p[?12l[?25ha[?25l:se pa[?12l[?25hs[?25l:se pas[?12l[?25ht[?25l:se past[?12l[?25he[?25l:se paste[?12l[?25h[?25l[1;1H[?12l[?25h[?25l[48;1H[1m-- INSERT (paste) --[1;1H[?12l[?25h[?25l[m[35m<?[m[30m[43mphp[m
+[34m// application/models/DbTable/Guestbook.[m[30m[43mphp[m[2;44H[K[3;1H[K[4;1H[34m/**[m[4;4H[K[5;1H[34m * This is the DbTable class for the guestbook table.[m[5;54H[K[6;1H[34m */[m[6;4H[K[7;1H[32mclass[m Default_Model_DbTable_Guestbook [32mextends[m Zend_Db_Table_Abstract[7;69H[K[8;1H[35m{[m[8;2H[K[9;1H    [34m/** Table name */[m[9;22H[K[10;1H    [32mprotected[m [33m$[m[36m_name[m    [33m=[m '[31mguestbook[m';[10;39H[K[11;1H[35m}[m[11;2H[K[12;1H[K[12;1H[?12l[?25h[?25l[8;1H[35m[46m{
+
+
+}[?12l[?25h[?25l[m[8;1H[35m{
+
+
+}[10;1H[?12l[?25h[9;1H[?25l[m[8;1H[35m[46m{
+
+
+}[8;1H[?12l[?25h[?25l[m[35m{
+
+
+}[7;1H[?12l[?25h[6;1H[5;1H[4;1H[m[48;1H[K[4;1H[?25l[?12l[?25h[?25l[48;1H:[?12l[?25hx[?25l:x[?12l[?25h[?25l"application/models/DbTable/Guestbook.php" "application/models/DbTable/Guestbook.php" [New] 12L, 248C written
+[?1l>[?12l[?25h[?1049l]0;root@host:/var/www/southwebfactory.com/core[root@host core]# vim application/models/DbTable/Guestbook.php[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pmkdir -p application/models/DbTableexit
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# ex
+]0;root@host:/var/www/southwebfactory.com/core[root@host core]# exit
+exit
+ex
+Script done on Fri 22 May 2009 06:21:45 PM EDT

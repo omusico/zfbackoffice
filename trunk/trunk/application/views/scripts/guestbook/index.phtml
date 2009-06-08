@@ -1,0 +1,22 @@
+<p>
+<a href="<?php echo $this->url(
+    array(
+        'controller' => 'guestbook',
+        'action'     => 'sign'
+    ), 'default', true ) ?>">Add Entry</a></p>
+
+Guestbook Entries: <br />
+<?php if (count($this->paginator)): ?>
+<dl>
+    <?php foreach ($this->paginator as $entry): ?>
+    <dt><?php echo $this->escape($entry->email) ?></dt>
+    <dd><?php echo $this->escape($entry->comment) ?></dd>
+    <?php endforeach ?>
+</dl>
+<br />
+<?php echo $this->paginationControl($this->paginator ); ?>
+<br />
+<?php else: ?>
+<strong>Is empty</strong>
+<?php endif;?>
+
