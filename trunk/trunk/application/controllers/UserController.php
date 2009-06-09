@@ -3,9 +3,8 @@
 class UserController extends Swf_Controller_Action
 {
     public function indexAction()
-    {
-    	
-        $user = new Default_Model_User();
+	{
+       	$user = new Default_Model_User();
         $where = str_replace( 
         	"%s", 
         	$this->view->escape( $this->_request->getParam( 'key' )),
