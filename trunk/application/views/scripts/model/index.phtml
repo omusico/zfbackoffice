@@ -1,0 +1,48 @@
+<br/>
+<p>
+<a href="<?php echo $this->url(
+    array(
+        'controller' => 'model',
+        'action'     => 'create'
+    ), 'default', true ) ?>">Agregar Item</a></p>
+
+Marcas: <br />
+
+<p><?php echo $this->searchForm; ?></p>
+
+<?php if (count($this->paginator)): ?>
+<table>
+	<tr>
+		<th>id</th>
+		<th>marca</th>
+		<th></th>
+	</tr>
+    <?php foreach ($this->paginator as $entry): ?>
+    <tr>
+    	<td><?php echo $this->escape( $entry->id ) ?></td>
+    	<td><?php echo $this->escape( $entry->name ) ?></td>
+	    <td>
+		<a href="<?php echo $this->url(
+		    array(
+		        'controller' => 'model',
+		        'action'     => 'update'
+		    ), 'default', true ) ?>/id/<?php echo $this->escape( $entry->id );?>">update</a>
+	    </td>
+	    <td>
+			<a href="<?php echo $this->url(
+		    array(
+		        'controller' => 'model',
+		        'action'     => 'delete'
+		    ), 'default', true ) ?>/id/<?php echo $this->escape( $entry->id );?>">delete</a>
+		</td>		
+	</tr>	    
+    
+    <?php endforeach ?>
+</table>
+<br />
+<?php echo $this->paginationControl($this->paginator ); ?>
+<br />
+<?php else: ?>
+<strong>Is empty</strong>
+<?php endif;?>
+
