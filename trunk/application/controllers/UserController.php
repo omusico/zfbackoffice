@@ -5,59 +5,49 @@ class UserController extends Swf_Controller_Action
     public function indexAction()
 	{
        	$user = new Default_Model_User();
-        $where = str_replace( 
-        	"%s", 
-        	$this->view->escape( $this->_request->getParam( 'key' )),
-        	"username like '%%s%' OR email like '%%s%'"  	); 
-        $data = $user->fetchAll( $where );
+        $data = $user->select();
         $paginator = Swf_Paginator::factory( $data, $this->view );
         $paginator->setCurrentPageNumber( $this->_getParam('page') );
         $this->view->paginator = $paginator;
-        $usernames = array();
-    	$emails = array();
-    	$ids = array();
-    	foreach ($this->view->paginator as $entry){ 
-    		$usernames[] = $entry->username ;
-    		$emails[]= $entry->email ;
-    		$ids[] = $entry->id ;
-    	}
-	$this->view->usernames = $usernames;
     }
     public function createAction()
     {
         $request = $this->getRequest();
         $form = new Default_Form_User();
-
         if ($this->getRequest()->isPost()) {
             if ($form->isValid($request->getPost())) {
-                $model = new Default_Model_User( $form->getValues() );
-                $model->save();
-                return $this->_helper->redirector('index');
+                $model = new Default_Model_User();
+                if( $model->getUserId( $form->getValue('username' )) === false ){
+	                $row = $model->createRow( $form->getValues() );
+	                $row->password = $model->encodePassword( $form->getValue('password') );
+	                $row->save();
+	                return $this->_helper->redirector('index');
+                } else {
+                	echo "el usuario ya existe";
+                }
             }
         }
         $this->view->form = $form;
     }
-
     public function updateAction()
     {
         $request = $this->getRequest();
         $form = new Default_Form_User();
 		$model = new Default_Model_User();
-		$userData = $model->find( $request->id );
+		$userRow = $model->find( $request->id )->current();
         if ($this->getRequest()->isPost()) {
             if ($form->isValid($request->getPost())) {
-                $model = new Default_Model_User( $form->getValues() );
-                $model->save();
+                $userRow->password = $model->encodePassword( $form->getValue('password') );
+                $userRow->save();
                 return $this->_helper->redirector('index');
             }
         } else {
-        	//print_r( $userData->toArray());
-        	$form->populate( $userData->toArray() );
+        	$form->populate( $userRow->toArray() );
         }
         $this->view->form = $form;
     }
-    
+    public function deleteAction()
+    {	
+			
+    }
 }
-
-
-
